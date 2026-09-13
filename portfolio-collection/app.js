@@ -50,7 +50,7 @@ document.querySelector('#weight').onchange=e=>document.querySelector('#type-spec
 document.querySelector('#specimen-input').oninput=e=>document.querySelector('#type-specimen').textContent=e.target.value||P.sample;
 function sizeFrame(f){const wrap=f.parentElement,w=+f.dataset.width;if(!wrap.clientWidth)return;f.style.width=w+'px';f.style.height=(wrap.clientHeight/(wrap.clientWidth/w))+'px';f.style.transform=`scale(${wrap.clientWidth/w})`;}
 window.sizeFrames=()=>document.querySelectorAll('iframe[data-page]').forEach(sizeFrame);
-function source(f){return `exhibit.html?project=${P.id}&page=${f.dataset.page}&kind=${f.dataset.kind}`}
+function source(f){return `screen.html?project=${P.id}&page=${f.dataset.page}&kind=${f.dataset.kind}`}
 const frameObserver=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const f=e.target;if(!f.src){f.src=source(f);f.onload=()=>sizeFrame(f)}sizeFrame(f)}}),{rootMargin:'400px'});
 document.querySelectorAll('iframe[data-page]').forEach(f=>frameObserver.observe(f));new ResizeObserver(()=>window.sizeFrames()).observe(document.querySelector('#case'));
 function changeFrame(f,page){f.dataset.page=page;delete f.dataset.ready;f.src=source(f);f.onload=()=>sizeFrame(f);window.restartPlayback?.(f.closest('section').id)}
