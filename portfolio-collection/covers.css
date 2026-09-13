@@ -68,3 +68,18 @@
 #cover-edenne{--scene-light:#f2bfdb;--scene-mid:#b96197;--scene-deep:#352036;--scene-glow:#ffe0f1}
 @media(max-width:760px){.pulse-live-mark img{width:93px}.studio-device{left:7%;width:86%;top:14%}.device-shadow{left:13%;right:13%;bottom:10%;filter:blur(16px)}}
 @media(prefers-reduced-motion:reduce){.studio-device,.device-shadow{transition:none!important;transform:none!important}.studio-card.is-tilting .studio-device,.studio-card.is-tilting .device-shadow{transform:none!important}}
+
+/* WeKwikGene cover: use the project's own DNA ring as the visual system. */
+.dna-cover{position:absolute;inset:0;overflow:hidden;isolation:isolate;background:radial-gradient(circle at 50% 44%,#477e9e 0,#1d4968 32%,#09233a 68%,#061522 100%);}
+.dna-cover::before{content:"";position:absolute;inset:-20%;background:repeating-radial-gradient(ellipse at 50% 48%,transparent 0 38px,rgba(181,225,239,.1) 39px 40px);transform:rotate(-16deg);opacity:.65;animation:dna-grid 18s linear infinite;}
+.dna-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 44%,transparent 25%,rgba(2,18,32,.45) 76%),linear-gradient(120deg,rgba(255,255,255,.13),transparent 32%);pointer-events:none;}
+.dna-ring{position:absolute;z-index:2;width:68%;height:68%;left:16%;top:15%;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 0 18px rgba(71,209,255,.7)) drop-shadow(0 20px 18px rgba(0,0,0,.32));transform:translate3d(calc(var(--dna-x,0px) + var(--dna-hover,0)*5px),var(--dna-y,0px),0) rotate(var(--dna-rotate,0deg));transition:transform 650ms cubic-bezier(.16,1,.3,1);}
+.dna-halo{position:absolute;z-index:1;width:48%;aspect-ratio:1;left:26%;top:25%;border-radius:50%;background:#6dd8ff;filter:blur(44px);opacity:.2;animation:dna-pulse 4.5s ease-in-out infinite;}
+.dna-orbit{position:absolute;z-index:1;border:1px solid rgba(176,232,255,.46);border-radius:50%;pointer-events:none;}
+.dna-orbit-a{width:78%;height:30%;left:11%;top:35%;transform:rotate(-20deg);animation:dna-orbit 10s linear infinite;}
+.dna-orbit-b{width:50%;height:82%;left:25%;top:9%;transform:rotate(28deg);animation:dna-orbit 14s linear reverse infinite;}
+.dna-caption{position:absolute;z-index:3;left:20px;bottom:18px;color:#d4f4ff;font:10px/1.2 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-shadow:0 1px 8px #061522;}
+@keyframes dna-grid{to{transform:rotate(344deg) scale(1.08)}}
+@keyframes dna-pulse{50%{transform:scale(1.18);opacity:.34}}
+@keyframes dna-orbit{to{transform:rotate(340deg)}}
+@media(prefers-reduced-motion:reduce){.dna-cover::before,.dna-halo,.dna-orbit{animation:none}.dna-ring{transition:none;transform:none}}
