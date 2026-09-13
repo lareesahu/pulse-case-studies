@@ -1,0 +1,572 @@
+<html lang="en" class="js"><head><base href="https://gramlingo.online/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GramLingo — Learn by Playing. Remember Forever.</title>
+<meta name="description" content="The grammar game that actually sticks. 12 grammar worlds, 92 phases — no tests, no drills, just play. EN · 中文 · Español">
+<meta name="theme-color" content="#ff8c42">
+<meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="fonts/baloo2-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="fonts/dmsans-latin.woff2">
+  <link rel="preload" as="image" type="image/webp" href="cover-tenses.webp" fetchpriority="high">
+  
+  <link rel="canonical" href="https://gramlingo.online/">
+<link rel="alternate" hreflang="en" href="https://gramlingo.online/">
+<link rel="alternate" hreflang="zh-CN" href="https://gramlingo.online/?lang=zh">
+<link rel="alternate" hreflang="es" href="https://gramlingo.online/?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://gramlingo.online/">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GramLingo">
+<meta property="og:title" content="GramLingo — Learn by Playing. Remember Forever.">
+<meta property="og:description" content="The grammar game that actually sticks. 12 worlds, 92 phases, no placement tests — EN · 中文 · Español.">
+<meta property="og:image" content="https://gramlingo.online/poster-1.jpg">
+<meta property="og:image:alt" content="GramLingo — grammar quest game with 12 worlds">
+<meta property="og:url" content="https://gramlingo.online/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gramlingo.online/poster-1.jpg">
+<meta name="twitter:site" content="@gramlingo">
+<style>
+  @font-face{font-family:'Baloo 2';font-style:normal;font-weight:600 800;font-display:swap;src:url('fonts/baloo2-latin.woff2') format('woff2')}
+  @font-face{font-family:'DM Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/dmsans-latin.woff2') format('woff2')}
+  :root{
+    --bg:#fff5ee; --surface:#ffffff; --ink:#2d1b10; --muted:#6b5544;
+    --sunset:#ff8c42; --sunset-dark:#e06a1f; --sunset-soft:#ffe6d2;
+    --lime:#8fd14f; --lime-dark:#5f9e2a; --lime-soft:#eff8e3;
+    --border:#f0dcc8; --border-strong:#e8cbaa;
+    --font-head:'Baloo 2','Trebuchet MS','Comic Sans MS',system-ui,sans-serif;
+    --font-body:'DM Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  .skip-link{position:absolute;left:-9999px;top:0;z-index:999;background:var(--ink);color:#fff;padding:10px 20px;border-radius:0 0 10px 10px;font-weight:700;font-size:14px;text-decoration:none}
+  .skip-link:focus{left:0}
+  a,button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+  a:focus-visible,button:focus-visible,[role="button"]:focus-visible{outline:3px solid var(--sunset);outline-offset:3px;border-radius:8px}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{display:block}
+
+  /* ── Nav ── */
+  .m-nav{position:sticky;top:0;z-index:80;background:var(--bg);border-bottom:2px solid var(--border)}
+  .m-nav-in{max-width:1100px;margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:14px;flex-wrap:nowrap;overflow:hidden}
+  .m-logo{display:flex;align-items:center;gap:8px;font-family:var(--font-head);font-weight:800;font-size:20px;flex-shrink:0}
+  .m-logo img{height:34px;width:auto}
+  .m-links{display:flex;gap:2px;flex-wrap:nowrap;overflow:hidden;white-space:nowrap}
+  .m-links a{font-size:13.5px;font-weight:700;color:#4a3320;text-decoration:none;padding:8px 11px;border-radius:999px;min-height:40px;display:inline-flex;align-items:center;white-space:nowrap}
+  .m-links a:hover{background:var(--sunset-soft);color:var(--sunset-dark)}
+  .m-nav-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .lang-switch{display:flex;border:2.5px solid var(--ink);border-radius:999px;overflow:hidden;background:var(--surface)}
+  .lang-switch button{border:none;background:transparent;font-family:var(--font-body);font-weight:800;font-size:12.5px;padding:7px 11px;cursor:pointer;min-height:38px;color:var(--muted)}
+  .lang-switch button.active{background:var(--sunset);color:var(--ink)}
+  .btn-clay{display:inline-flex;align-items:center;justify-content:center;background:var(--sunset);color:var(--ink);border:3px solid var(--ink);border-radius:999px;font-family:var(--font-body);font-weight:800;font-size:15px;padding:10px 22px;box-shadow:0 4px 0 rgba(45,27,16,.35);cursor:pointer;text-decoration:none;min-height:44px;white-space:nowrap}
+  .btn-ghost{background:var(--surface);color:var(--ink)}
+  .btn-lime{background:var(--lime);color:var(--ink)}
+  .btn-lime:hover{background:var(--lime-dark);color:#fff}
+  .hamburger{display:none;background:none;border:2.5px solid var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer;min-height:44px;min-width:44px;flex-shrink:0}
+  .hamburger span{display:block;width:20px;height:3px;background:var(--ink);border-radius:3px;margin:4px auto}
+  @media (max-width:980px){
+    .m-links{flex-direction:column;width:100%;display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:2px solid var(--border);padding:8px 22px;overflow:visible}
+    .m-links.open{display:flex}
+    .m-nav-in{position:relative}
+    .hamburger{display:block}
+  }
+
+  /* ── Layout ── */
+  .section-pad{padding:60px 30px}
+  .sec-head{max-width:640px;margin:0 auto;text-align:center}
+  .sec-head h2{font-family:var(--font-head);font-weight:800;font-size:30px;line-height:1.15}
+  .sec-head p{color:var(--muted);font-size:15.5px;margin-top:10px}
+  .eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--sunset-dark);background:var(--sunset-soft);border:2px solid var(--sunset);padding:4px 14px;border-radius:999px;margin-bottom:14px}
+
+  /* ── Hero ── */
+  .hero{padding:50px 24px 40px}
+  .hero .h-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+  .hero h1{font-family:var(--font-head);font-weight:800;font-size:42px;line-height:1.1}
+  .hero .h-sub{max-width:480px;margin-top:16px;font-size:17px;color:#4a3320}
+  .hero .h-ctas{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .hero .h-stats{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap}
+  .stat-pill{font-size:13px;font-weight:800;background:var(--surface);border:2.5px solid var(--ink);border-radius:999px;padding:7px 16px;box-shadow:0 3px 0 rgba(45,27,16,.22)}
+  .hero .h-visual{position:relative;padding:10px 0 30px}
+  .hero .h-cover{width:340px;max-width:100%;margin:0 auto;border:3px solid var(--ink);border-radius:22px;overflow:hidden;box-shadow:0 8px 0 rgba(45,27,16,.35)}
+  .hero .h-cover img{width:100%;aspect-ratio:1/1;object-fit:cover}
+  .hero .chip-card{background:var(--surface);border:3px solid var(--ink);border-radius:14px;box-shadow:0 4px 0 rgba(45,27,16,.3);padding:10px 14px;font-size:12.5px;font-weight:800;display:inline-flex;align-items:center;gap:8px;margin-top:14px}
+  .hero .chip-1 .dot{width:12px;height:12px;border-radius:50%;background:var(--lime);border:2px solid var(--ink)}
+  .hero .chip-2 .stars{color:var(--sunset);letter-spacing:1px}
+  @media (max-width:820px){.hero .h-in{grid-template-columns:1fr}.hero .h-visual{margin-top:10px}}
+
+  /* ── Journey slideshow ── */
+  #sec-journey{order:1}
+  .journey-wrap{max-width:680px;margin:36px auto 0}
+  .slideshow{position:relative;border:3px solid var(--ink);border-radius:22px;box-shadow:0 6px 0 rgba(45,27,16,.35);overflow:hidden;background:#2d1b10}
+  .slide-track{display:flex;transition:transform .55s cubic-bezier(.4,.1,.2,1)}
+  .j-slide{flex:0 0 100%}
+  .j-slide img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;max-height:480px}
+  .slide-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:3px solid var(--ink);background:var(--surface);color:var(--ink);font-size:24px;font-weight:800;cursor:pointer;box-shadow:0 3px 0 rgba(45,27,16,.3);z-index:5;display:flex;align-items:center;justify-content:center;line-height:1;padding:0}
+  .slide-arrow span{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-family:Arial,sans-serif}
+  .slide-arrow.prev{left:14px}
+  .slide-arrow.next{right:14px}
+  .slide-dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
+  .slide-dots button{width:12px;height:12px;border-radius:50%;border:2.5px solid var(--ink);background:var(--border);cursor:pointer;padding:0}
+  .slide-dots button.active{background:var(--sunset)}
+  @media (max-width:640px){.slide-arrow{width:34px;height:34px;font-size:18px}.slide-arrow.prev{left:8px}.slide-arrow.next{right:8px}.j-slide img{aspect-ratio:3/2;max-height:320px}}
+
+  /* ── Split sections ── */
+  .split-sec{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start}
+  .split-text{position:sticky;top:110px;text-align:left;max-width:340px}
+  .split-text h2{font-family:var(--font-head);font-weight:800;font-size:28px;line-height:1.15}
+  .split-text p{color:var(--muted);font-size:15.5px;margin-top:10px}
+  @media (max-width:900px){
+    .split-sec{grid-template-columns:1fr;gap:28px}
+    .split-text{position:static}
+  }
+
+  /* ── How It Works: sticky stack cards ── */
+  .step-stack{display:flex;flex-direction:column;gap:24px}
+  .step-stack-card{position:sticky;top:90px;background:var(--surface);border:3px solid var(--ink);border-radius:20px;box-shadow:0 6px 0 rgba(45,27,16,.3);padding:24px 26px;display:flex;align-items:center;gap:20px;transition:transform .3s ease}
+  .step-stack-card:nth-child(1){top:90px}
+  .step-stack-card:nth-child(2){top:120px}
+  .step-stack-card:nth-child(3){top:150px}
+  .step-stack-card .ss-num{width:48px;height:48px;border-radius:50%;background:var(--sunset);color:var(--ink);border:3px solid var(--ink);font-family:var(--font-head);font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .step-stack-card .ss-img{width:80px;height:80px;flex-shrink:0;border-radius:14px;overflow:hidden;border:2.5px solid var(--ink)}
+  .step-stack-card .ss-img img{width:100%;height:100%;object-fit:cover}
+  .step-stack-card .ss-body h3{font-family:var(--font-head);font-weight:800;font-size:18px}
+  .step-stack-card .ss-body p{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .step-stack-card .ss-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--lime-dark);background:var(--lime-soft);border:2px solid var(--lime);padding:3px 10px;border-radius:999px;margin-top:8px}
+  @media (max-width:640px){
+    .step-stack-card{flex-direction:column;text-align:center;gap:12px}
+    .step-stack-card:nth-child(1),.step-stack-card:nth-child(2),.step-stack-card:nth-child(3){position:relative;top:0}
+  }
+
+  /* ── Worlds carousel ── */
+  .w-carousel-wrap{position:relative;margin-top:34px}
+  .w-carousel{display:flex;gap:16px;overflow-x:auto;padding:14px 6px 22px;scroll-snap-type:x mandatory}
+  .w-carousel::-webkit-scrollbar{height:8px}
+  .w-carousel::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:99px}
+  .w-carousel-hint{text-align:right;color:var(--muted);font-size:12px;font-weight:800;margin:0 8px 2px}
+  .w-card{flex:0 0 220px;background:#fff;border:3px solid var(--ink);border-radius:18px;box-shadow:0 4px 0 rgba(45,27,16,.3);scroll-snap-align:start;transition:transform .25s cubic-bezier(.22,.61,.36,1),box-shadow .25s ease}
+  .w-card:hover{transform:translateY(-5px)}
+  .w-card .w-img{aspect-ratio:1/1;overflow:hidden;border-radius:15px 15px 0 0}
+  .w-card .w-img img{width:100%;height:100%;object-fit:cover}
+  .w-card .w-body{padding:14px 16px}
+  .w-card h3{font-family:var(--font-head);font-weight:800;font-size:15px}
+  .w-card p{font-size:12px;color:var(--muted);margin-top:4px}
+
+  /* ── How it feels: faithful replica of the actual app (tokens mirror src/styles/tokens.css) ── */
+  .game-mock{margin-top:34px;display:grid;grid-template-columns:1.12fr 1fr;gap:22px;max-width:820px;margin-left:auto;margin-right:auto;align-items:start}
+  .gm-screen{background:var(--surface);border:2px solid #f0e5d8;border-radius:18px;overflow:hidden;box-shadow:0 8px 28px rgba(45,27,16,.09)}
+  .gm-app{padding:18px 20px 20px}
+  .gm-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+  .gm-phase{font-size:13px;font-weight:600;color:#5c3d2e}
+  .gm-count{font-size:12px;color:#8c7b6e;font-family:ui-monospace,Consolas,monospace;white-space:nowrap}
+  .gm-track{height:8px;border-radius:99px;background:#f0e5d8;overflow:hidden;margin-bottom:12px}
+  .gm-fill{height:100%;width:28%;border-radius:99px;background:var(--sunset)}
+  .gm-gramlin{display:flex;justify-content:center;margin-bottom:6px}
+  .gm-gramlin img{height:78px;width:auto}
+  .gm-q{font-size:17px;font-weight:500;line-height:1.5;color:var(--ink);margin-bottom:14px}
+  .gm-opts{display:flex;flex-direction:column;gap:8px}
+  .gm-opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:2px solid #f0e5d8;border-radius:12px;background:#fffaf6;font-size:14.5px;font-weight:500;color:var(--ink)}
+  .gm-letter{width:28px;height:28px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:2px solid #e8d5c4;border-radius:8px;font-weight:800;font-size:13px;color:#5c3d2e;background:var(--surface)}
+  .gm-opt--correct{border-color:#4caf50;background:#e8f5e9}
+  .gm-opt--correct .gm-letter{border-color:#4caf50;background:#4caf50;color:#fff}
+  .gm-opt--wrong{border-color:#e07070;background:#fce4e4}
+  .gm-opt--wrong .gm-letter{border-color:#e07070;background:#e07070;color:#fff}
+  .gm-opt--dim{opacity:.5}
+  .gm-feedback{margin-top:12px;border-radius:12px;background:#e8f5e9;padding:12px 14px}
+  .gm-feedback--wrong{background:#fce4e4}
+  .gm-fb-label{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#2e7d32;margin-bottom:4px}
+  .gm-feedback--wrong .gm-fb-label{color:#b91c1c}
+  .gm-fb-text{font-size:13.5px;line-height:1.55;color:#4a3320}
+  .gm-actions{margin-top:14px;display:flex;justify-content:flex-end}
+  .gm-next{background:var(--sunset);color:#fff;font-family:var(--font-body);font-weight:800;font-size:15px;padding:11px 22px;border-radius:12px;box-shadow:0 3px 0 rgba(224,106,31,.45)}
+  /* Error Log screen (mirrors ErrorLogScreen) */
+  .gm-wb-head{display:flex;align-items:center;gap:12px;padding:16px 20px 6px}
+  .gm-wb-head img{height:54px;width:auto}
+  .gm-wb-title{font-family:var(--font-head);font-weight:800;font-size:18px}
+  .gm-wb-sub{font-size:12.5px;color:var(--muted)}
+  .gm-wb-entries{padding:10px 20px 6px;display:flex;flex-direction:column;gap:12px}
+  .gm-wb-entry{border:2px solid #f0e5d8;border-radius:12px;padding:12px 14px;background:#fffaf6}
+  .gm-wb-meta{display:flex;gap:10px;align-items:center;font-size:11.5px;color:#8c7b6e;margin-bottom:8px}
+  .gm-wb-meta .gm-wb-phase{font-weight:700;color:#5c3d2e}
+  .gm-wb-q{background:var(--surface);border:1px solid #f0e5d8;border-radius:8px;padding:8px 10px;font-size:13px;color:var(--ink);margin-bottom:8px}
+  .gm-wb-ans{font-size:12.5px;padding:6px 10px;border-radius:8px;margin-bottom:6px}
+  .gm-wb-ans .lbl{font-weight:800;margin-right:6px}
+  .gm-wb-ans--user{background:#fef2f2;border:1px solid #fecaca;color:#7f1d1d}
+  .gm-wb-ans--user .lbl{color:#b91c1c}
+  .gm-wb-ans--correct{background:#f0fdf4;border:1px solid #bbf7d0;color:#14532d}
+  .gm-wb-ans--correct .lbl{color:#15803d}
+  .gm-retry{display:inline-block;margin-top:4px;border:2px solid var(--sunset);background:var(--surface);color:var(--sunset-dark);font-weight:800;font-size:12.5px;padding:5px 14px;border-radius:99px}
+  .gm-wb-note{margin:8px 20px 18px;font-size:12.5px;color:#5c3d2e;line-height:1.55;background:var(--sunset-soft);border-radius:10px;padding:10px 14px}
+  @media (max-width:640px){.game-mock{grid-template-columns:1fr}}
+
+  /* ── Why section ── */
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:34px}
+  .why-card{background:var(--surface);border:3px solid var(--ink);border-radius:18px;box-shadow:0 4px 0 rgba(45,27,16,.3);padding:26px 24px}
+  .why-card .w-icon{width:52px;height:52px;border-radius:14px;background:var(--lime-soft);border:2.5px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:14px}
+  .why-card h3{font-family:var(--font-head);font-weight:800;font-size:17px}
+  .why-card p{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.55}
+
+  /* ── FAQ ── */
+  .faq-list{max-width:720px;margin:30px auto 0}
+  details.faq-item{background:#fff;border:3px solid var(--ink);border-radius:18px;box-shadow:0 4px 0 rgba(45,27,16,.3);margin-bottom:12px}
+  details.faq-item summary{list-style:none;cursor:pointer;padding:18px 22px;font-family:var(--font-head);font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  details.faq-item summary::-webkit-details-marker{display:none}
+  details.faq-item summary::after{content:'+';font-size:22px;font-weight:800;color:var(--sunset-dark);flex-shrink:0}
+  details.faq-item[open] summary::after{content:'−';}
+  details.faq-item .faq-a{padding:0 22px 18px;font-size:14.5px;color:#4a3320;line-height:1.6}
+
+  /* ── Final CTA ── */
+  .cta-band{max-width:820px;margin:0 auto;text-align:center;background:var(--lime-soft);border:3px solid var(--ink);border-radius:22px;box-shadow:0 4px 0 rgba(45,27,16,.3);padding:50px 28px}
+  .cta-band h2{font-family:var(--font-head);font-weight:800;font-size:32px}
+  .cta-band p{color:#4a3320;font-size:15px;margin-top:10px}
+  .cta-band .btn-lime{margin-top:24px;font-size:17px;padding:14px 32px;box-shadow:0 5px 0 rgba(45,27,16,.35)}
+
+  /* ── Footer ── */
+  .m-foot{background:var(--ink);color:#fff;padding:44px 24px 0;margin-top:70px}
+  .m-foot-top{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding-bottom:30px}
+  .m-foot .f-brand{display:flex;align-items:center;gap:10px}
+  .m-foot .f-brand img{height:36px;width:auto}
+  .m-foot .f-tag{font-size:13px;color:#e8cbaa;margin-top:6px}
+  .m-foot-bottom{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid rgba(255,255,255,.15)}
+  .m-foot .f-links{display:flex;gap:20px;font-size:13px;font-weight:600}
+  .m-foot .f-links a{color:#e8cbaa;text-decoration:none}
+  .m-foot .f-links a:hover{color:#fff}
+  .m-foot .f-credit{font-size:12px;color:#c9a88a}
+  .m-foot .f-credit a{color:#e8cbaa;text-decoration:none}
+  .m-foot .lang-switch{border-color:#fff}
+  .m-foot .lang-switch button{color:#e8cbaa}
+  .m-foot .lang-switch button.active{background:var(--sunset);color:var(--ink)}
+
+  @media (max-width:640px){
+    .hero h1{font-size:30px}
+    .section-pad{padding:40px 18px}
+    .step-stack-card{top:auto!important;position:relative}
+  }
+
+  /* ── Motion ── */
+  .hero{animation:heroIn .7s cubic-bezier(.22,.61,.36,1) both}
+  @keyframes heroIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  /* Reveals: hidden only when JS is loaded (graceful no-JS fallback) */
+  .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s cubic-bezier(.22,.61,.36,1),transform .65s cubic-bezier(.22,.61,.36,1)}
+  .js .reveal.in{opacity:1;transform:none}
+  /* Print / headless render: always show full content (animations would otherwise snapshot mid-fade) */
+  @media print{
+    .hero,.js .reveal{animation:none !important;opacity:1 !important;transform:none !important;transition:none !important}
+  }
+  @media (max-width:640px){.js .reveal{transform:translateY(14px)}}
+  .btn-clay,.btn-ghost,.btn-lime{transition:transform .18s cubic-bezier(.22,.61,.36,1),box-shadow .18s ease,background .18s ease}
+  .btn-clay:hover{transform:translateY(-2px)}
+  .btn-clay:active{transform:translateY(1px)}
+  .btn-lime:hover{transform:translateY(-2px)}
+  .stat-pill{transition:transform .2s ease}
+  .stat-pill:hover{transform:translateY(-2px)}
+  .w-card:hover{transform:translateY(-5px)}
+  .slide-arrow{transition:transform .15s ease,background .15s ease}
+  .slide-arrow:hover{transform:translateY(-50%) scale(1.08)}
+  .m-links a{transition:background .15s ease,color .15s ease}
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important}
+  }
+</style>
+<style>html{scroll-behavior:auto!important;scrollbar-width:none}body{overflow-x:hidden!important}*{animation:none!important;transition:none!important}button,input,select,textarea,a{pointer-events:none!important}.capture-hero img{width:100%;display:block}.capture-hero{padding:0!important;margin:0!important;min-height:0!important}.spline-fixed{display:none!important}.chat-widget,.inquiry-cart-fab,#cookie-banner{display:none!important}body:has(.capture-hero) nav.nav{display:none!important}section[style*="opacity: 0"]{opacity:1!important}</style></head>
+<body class="lang-en">
+<a href="#sec-journey" class="skip-link" data-i18n="skipLink">Skip to content</a>
+
+<nav class="m-nav" aria-label="Main">
+  <div class="m-nav-in">
+    <a class="m-logo" href="#"><img src="gramlingo-logo.webp" alt="GramLingo" width="800" height="221" fetchpriority="high"></a>
+    <div class="m-links" id="mLinks">
+      <a href="#sec-worlds" data-i18n="navWorlds">Worlds</a>
+      <a href="#sec-how" data-i18n="navHow">How it works</a>
+      <a href="#sec-word" data-i18n="navWord">Word power</a>
+      <a href="#sec-why" data-i18n="navWhy">Why</a>
+      <a href="#sec-faq" data-i18n="navFaq">FAQ</a>
+    </div>
+    <div class="m-nav-right">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button aria-pressed="true" data-lang="en" class="active">EN</button>
+        <button aria-pressed="false" data-lang="zh">中文</button>
+        <button aria-pressed="false" data-lang="es">ES</button>
+      </div>
+      <a class="btn-clay" href="https://app.gramlingo.online" target="_blank" rel="noopener noreferrer" data-i18n="ctaStart">Start the Quest</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="h-in">
+    <div>
+      <span class="eyebrow" data-i18n="eyebrowHero">The grammar game that actually sticks</span>
+      <h1 data-i18n="heroHeadline">Learn by playing. Remember forever.</h1>
+      <p class="h-sub" data-i18n="heroSub">Wrong answers never punish you — they go straight to your Error Log.</p>
+      <div class="h-ctas">
+        <a class="btn-clay" href="https://app.gramlingo.online" target="_blank" rel="noopener noreferrer" data-i18n="ctaStart">Start the Quest</a>
+        <a class="btn-clay btn-ghost" href="#sec-how" data-i18n="ctaSee">See how it works</a>
+      </div>
+      <div class="h-stats">
+        <span class="stat-pill" data-i18n="statWorlds">12 grammar worlds</span>
+        <span class="stat-pill" data-i18n="statPhases">92 phases</span>
+        <span class="stat-pill" data-i18n="statZero">no placement tests</span>
+      </div>
+    </div>
+    <div class="h-visual">
+      <div class="h-cover"><img src="cover-tenses.webp" fetchpriority="high" width="512" height="512" alt="Verb Tenses world" loading="lazy"></div>
+      <div class="chip-card chip-1"><span class="dot"></span><span data-i18n="chipWrongBook">Mistakes go straight to your Error Log</span></div>
+      <div class="chip-card chip-2"><span class="stars">★★★</span><span data-i18n="chipStars">Phase unlocked — keep going!</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY SLIDESHOW -->
+<section id="sec-journey" class="section-pad reveal in">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="eyebrowJourney">Inside the app</span>
+    <h2 data-i18n="journeyTitle">Your journey, one quest at a time</h2>
+    <p data-i18n="journeySub">Four acts of adventure — straight from the app’s opening story.</p>
+  </div>
+  <div class="journey-wrap">
+    <div class="slideshow" id="journeySlides">
+      <button class="slide-arrow prev" type="button" aria-label="Previous slide"><span>‹</span></button>
+      <div class="slide-track" id="journeyTrack" style="transform: translateX(0%);">
+        <div class="j-slide"><img src="cover-modals.webp" width="512" height="512" alt="GramLingo quest begins" loading="lazy"></div>
+        <div class="j-slide"><img src="cover-tenses.webp" width="512" height="512" alt="GramLingo learning adventure" loading="lazy"></div>
+        <div class="j-slide"><img src="cover-passive.webp" width="640" height="640" alt="GramLingo world exploration" loading="lazy"></div>
+        <div class="j-slide"><img src="cover-advanced.webp" width="512" height="512" alt="GramLingo mastery" loading="lazy"></div>
+      </div>
+      <button class="slide-arrow next" type="button" aria-label="Next slide"><span>›</span></button>
+    </div>
+    <div class="slide-dots" id="journeyDots"><button type="button" aria-label="Slide 1" class="active"></button><button type="button" aria-label="Slide 2" class=""></button><button type="button" aria-label="Slide 3" class=""></button><button type="button" aria-label="Slide 4" class=""></button></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS: sticky stack cards -->
+<section id="sec-how" class="section-pad split-sec reveal in">
+  <div class="split-text">
+    <span class="eyebrow" data-i18n="eyebrowHow">3 steps</span>
+    <h2 data-i18n="howTitle">How it works</h2>
+    <p data-i18n="howSub">No syllabus, no drills — just a quest from confused to confident.</p>
+  </div>
+  <div class="split-visual">
+    <div class="step-stack">
+      <div class="step-stack-card">
+        <div class="ss-num">1</div>
+        <div class="ss-img"><img src="think-gramlin.webp" width="300" height="300" alt="Gramlin thinking" loading="lazy"></div>
+        <div class="ss-body">
+          <h3 data-i18n="step1T">Pick a world</h3>
+          <p data-i18n="step1D">Choose from 12 grammar worlds — clauses, tenses, conditionals and more.</p>
+          <span class="ss-tag" data-i18n="step1Tag">No placement test needed</span>
+        </div>
+      </div>
+      <div class="step-stack-card">
+        <div class="ss-num">2</div>
+        <div class="ss-img"><img src="study-gramlin.webp" width="300" height="300" alt="Gramlin studying" loading="lazy"></div>
+        <div class="ss-body">
+          <h3 data-i18n="step2T">Play &amp; learn</h3>
+          <p data-i18n="step2D">Instant feedback with clear explanations — every option teaches you why.</p>
+          <span class="ss-tag" data-i18n="step2Tag">Every wrong answer explained</span>
+        </div>
+      </div>
+      <div class="step-stack-card">
+        <div class="ss-num">3</div>
+        <div class="ss-img"><img src="celebrate-gramlin.webp" width="300" height="300" alt="Gramlin celebrating" loading="lazy"></div>
+        <div class="ss-body">
+          <h3 data-i18n="step3T">Level up</h3>
+          <p data-i18n="step3D">Earn stars, unlock phases, and let your Error Log build your review.</p>
+          <span class="ss-tag" data-i18n="step3Tag">Auto-built review from your mistakes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRAMMAR WORLDS: carousel -->
+<section id="sec-worlds" class="section-pad reveal in">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="eyebrowWorlds">Curriculum</span>
+    <h2 data-i18n="worldsTitle">12 Grammar Worlds</h2>
+    <p data-i18n="worldsSub">From relative clauses to advanced expressions — every module is a new adventure.</p>
+  </div>
+  <div class="w-carousel-wrap">
+    <div class="w-carousel-hint" data-i18n="carouselHint">Drag to explore →</div>
+    <div class="w-carousel">
+      <div class="w-card"><div class="w-img"><img src="cover-clauses.webp" width="640" height="640" alt="Relative Clauses" loading="lazy"></div><div class="w-body"><h3 data-i18n="wClauses">Relative Clauses</h3><p data-i18n="wClausesD">who · which · that</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-prepositions.webp" width="512" height="512" alt="Prepositions" loading="lazy"></div><div class="w-body"><h3 data-i18n="wPrep">Prepositions</h3><p data-i18n="wPrepD">in · on · at</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-tenses.webp" width="512" height="512" alt="Verb Tenses" loading="lazy"></div><div class="w-body"><h3 data-i18n="wTenses">Verb Tenses</h3><p data-i18n="wTensesD">past · present · future</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-conditionals.webp" width="512" height="512" alt="Conditionals" loading="lazy"></div><div class="w-body"><h3 data-i18n="wCond">Conditionals</h3><p data-i18n="wCondD">if · would · could</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-passive.webp" width="640" height="640" alt="Passive Voice" loading="lazy"></div><div class="w-body"><h3 data-i18n="wPassive">Passive Voice</h3><p data-i18n="wPassiveD">is done · was made</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-reported.webp" width="512" height="512" alt="Reported Speech" loading="lazy"></div><div class="w-body"><h3 data-i18n="wReported">Reported Speech</h3><p data-i18n="wReportedD">she said that…</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-modals.webp" width="512" height="512" alt="Modals" loading="lazy"></div><div class="w-body"><h3 data-i18n="wModals">Modals</h3><p data-i18n="wModalsD">can · must · might</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-determiners.webp" width="512" height="512" alt="Articles &amp; Determiners" loading="lazy"></div><div class="w-body"><h3 data-i18n="wDet">Articles &amp; Determiners</h3><p data-i18n="wDetD">a · an · the</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-conjunctions.webp" width="512" height="512" alt="Conjunctions" loading="lazy"></div><div class="w-body"><h3 data-i18n="wConj">Conjunctions</h3><p data-i18n="wConjD">and · but · because</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-verb_patterns.webp" width="640" height="427" alt="Verb Patterns" loading="lazy"></div><div class="w-body"><h3 data-i18n="wVerb">Verb Patterns</h3><p data-i18n="wVerbD">enjoy doing · decide to do</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-sentence_structure.webp" width="512" height="512" alt="Sentence Structure" loading="lazy"></div><div class="w-body"><h3 data-i18n="wSent">Sentence Structure</h3><p data-i18n="wSentD">subject · verb · object</p></div></div>
+      <div class="w-card"><div class="w-img"><img src="cover-advanced.webp" width="512" height="512" alt="Advanced Expressions" loading="lazy"></div><div class="w-body"><h3 data-i18n="wAdv">Advanced Expressions</h3><p data-i18n="wAdvD">idioms that impress</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT FEELS: faithful replica of the actual app (real question clauses_subj_q01 from game-data.json) -->
+<section id="sec-word" class="section-pad reveal in">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="eyebrowWord">How it feels</span>
+    <h2 data-i18n="wordTitle">See it in action</h2>
+    <p data-i18n="wordSub">Straight from the game — a real question, real feedback, and where your mistakes go next.</p>
+  </div>
+  <div class="game-mock">
+    <!-- Lesson screen replica -->
+    <div class="gm-screen">
+      <div class="gm-app">
+        <div class="gm-header">
+          <span class="gm-phase" data-i18n="gmPhase">Phase 2: Subject Relatives</span>
+          <span class="gm-count" data-i18n="gmCount">Question 2 of 7</span>
+        </div>
+        <div class="gm-track" role="presentation"><div class="gm-fill"></div></div>
+        <div class="gm-gramlin"><img src="think-gramlin.webp" width="128" height="128" alt="Gramlin the mascot, thinking" loading="lazy"></div>
+        <p class="gm-q" data-i18n="gmQ">The woman ___ called me is my manager.</p>
+        <div class="gm-opts">
+          <div class="gm-opt gm-opt--correct"><span class="gm-letter">A</span><span>who</span></div>
+          <div class="gm-opt gm-opt--wrong"><span class="gm-letter">B</span><span>which</span></div>
+          <div class="gm-opt gm-opt--dim"><span class="gm-letter">C</span><span>where</span></div>
+          <div class="gm-opt gm-opt--dim"><span class="gm-letter">D</span><span>whom</span></div>
+        </div>
+        <div class="gm-feedback gm-feedback--wrong">
+          <div class="gm-fb-label" data-i18n="gmFbLabel">Your answer — B ✗</div>
+          <div class="gm-fb-text" data-i18n="gmFbText">“which” is for things, not people. The woman is a person acting as the subject, so “who” is correct. Tap any option to see its own explanation.</div>
+        </div>
+        <div class="gm-actions"><span class="gm-next" data-i18n="gmNext">Next →</span></div>
+      </div>
+    </div>
+    <!-- Error Log replica (mirrors the app's Error Log) -->
+    <div class="gm-screen">
+      <div class="gm-wb-head">
+        <img src="study-gramlin.webp" width="96" height="96" alt="Gramlin the mascot, studying" loading="lazy">
+        <div>
+          <div class="gm-wb-title" data-i18n="gmWbTitle">Error Log</div>
+          <div class="gm-wb-sub" data-i18n="gmWbSub">Auto-built from every mistake</div>
+        </div>
+      </div>
+      <div class="gm-wb-entries">
+        <div class="gm-wb-entry">
+          <div class="gm-wb-meta"><span class="gm-wb-phase">Relative Clauses · Phase 2</span><span>#2</span></div>
+          <div class="gm-wb-q">The woman ___ called me is my manager.</div>
+          <div class="gm-wb-ans gm-wb-ans--user"><span class="lbl" data-i18n="gmYour">Your answer</span> which</div>
+          <div class="gm-wb-ans gm-wb-ans--correct"><span class="lbl" data-i18n="gmCorrect">Correct</span> who</div>
+          <span class="gm-retry" data-i18n="gmRetry">↻ Retry this phase</span>
+        </div>
+        <div class="gm-wb-entry">
+          <div class="gm-wb-meta"><span class="gm-wb-phase">Relative Clauses · Phase 5</span><span>#4</span></div>
+          <div class="gm-wb-q">The train ___ arrives at 3 PM is delayed.</div>
+          <div class="gm-wb-ans gm-wb-ans--user"><span class="lbl" data-i18n="gmYour">Your answer</span> when</div>
+          <div class="gm-wb-ans gm-wb-ans--correct"><span class="lbl" data-i18n="gmCorrect">Correct</span> that</div>
+          <span class="gm-retry" data-i18n="gmRetry">↻ Retry this phase</span>
+        </div>
+      </div>
+      <div class="gm-wb-note" data-i18n="gmWbNote">Every miss lands here automatically — grouped by phase, one tap to retry, exportable as PDF or Markdown.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="sec-why" class="section-pad reveal in">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="eyebrowWhy">Different</span>
+    <h2 data-i18n="whyTitle">Why GramLingo</h2>
+    <p data-i18n="whySub">Most grammar tools test you. GramLingo plays with you.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="w-icon">🎮</div>
+      <h3 data-i18n="why1T">No tests — the game is the test</h3>
+      <p data-i18n="why1D">You learn by mistakes, not by being graded. No placement tests, no drills, no pressure — just play and the game figures out what you need.</p>
+    </div>
+    <div class="why-card">
+      <div class="w-icon">💡</div>
+      <h3 data-i18n="why2T">Every mistake teaches</h3>
+      <p data-i18n="why2D">Instant feedback with per-option explanations — every wrong choice explains why it's wrong, so you never make the same mistake twice.</p>
+    </div>
+    <div class="why-card">
+      <div class="w-icon">📖</div>
+      <h3 data-i18n="why3T">The Error Log</h3>
+      <p data-i18n="why3D">Your personal review log, auto-built from your exact mistakes. It resurfaces items at spaced intervals — right when you're about to forget them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="sec-faq" class="section-pad reveal in">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="eyebrowFaq">FAQ</span>
+    <h2 data-i18n="faqTitle">Questions, answered</h2>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary data-i18n="faq1Q">Is GramLingo really free?</summary>
+      <div class="faq-a" data-i18n="faq1A">Yes — the first grammar world is completely free, no credit card, no signup wall. You can start playing in under 10 seconds. Future worlds may have a small unlock cost.</div>
+    </details>
+    <details class="faq-item">
+      <summary data-i18n="faq2Q">What makes it different from Duolingo or grammar textbooks?</summary>
+      <div class="faq-a" data-i18n="faq2A">Textbooks explain rules then test you. Duolingo drills vocabulary with gamified streaks. GramLingo does neither — it turns grammar itself into a quest. Every question teaches through instant per-option feedback, and your mistakes auto-build a spaced-review Error Log. No drills, no flashcards, no "you lost your streak" anxiety.</div>
+    </details>
+    <details class="faq-item">
+      <summary data-i18n="faq3Q">Can I learn in my own language?</summary>
+      <div class="faq-a" data-i18n="faq3A">Yes — switch between English, 中文 and Español anytime, even mid-lesson. Explanations adapt to your language instantly. Perfect for learners who think in Chinese or Spanish but want to master English grammar.</div>
+    </details>
+    <details class="faq-item">
+      <summary data-i18n="faq4Q">I'm preparing for IELTS / CET-4 / gaokao — will this help?</summary>
+      <div class="faq-a" data-i18n="faq4A">Absolutely. The 12 worlds cover the exact grammar points these exams test — relative clauses, conditionals, passive voice, modals, and more. Each world's phases get progressively harder, matching exam difficulty. Your Error Log becomes a targeted study guide for the gaps the exam will expose.</div>
+    </details>
+    <details class="faq-item">
+      <summary data-i18n="faq5Q">Does it work on my phone?</summary>
+      <div class="faq-a" data-i18n="faq5A">Yes — it runs in any modern browser on phone, tablet, or desktop. No download, no install, no app store. Your progress syncs across devices automatically, so you can start on your phone and finish on your laptop.</div>
+    </details>
+    <details class="faq-item">
+      <summary data-i18n="faq6Q">How much time do I need per day?</summary>
+      <div class="faq-a" data-i18n="faq6A">Five minutes is enough. The quest saves your place automatically, and your Error Log builds itself from the questions you miss — no extra study sessions needed. Consistency beats intensity: 10 minutes daily will outperform a 2-hour cram every time.</div>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="sec-cta" class="section-pad reveal in">
+  <div class="cta-band">
+    <h2 data-i18n="ctaTitle">Ready to master grammar?</h2>
+    <p data-i18n="ctaSub">12 worlds. 92 phases. Zero tests. Start the Quest.</p>
+    <a class="btn-clay btn-lime" href="https://app.gramlingo.online" target="_blank" rel="noopener noreferrer" data-i18n="ctaStart2">Start the Quest →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="m-foot">
+  <div class="m-foot-top">
+    <div>
+      <div class="f-brand"><img src="gramlingo-logo.webp" alt="GramLingo" width="800" height="221"></div>
+      <p class="f-tag" data-i18n="tagline">Grammar Quest — Learn by playing</p>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button aria-pressed="true" data-lang="en" class="active">EN</button>
+      <button aria-pressed="false" data-lang="zh">中文</button>
+      <button aria-pressed="false" data-lang="es">ES</button>
+    </div>
+  </div>
+  <div class="m-foot-bottom">
+    <div class="f-links">
+      <a href="privacy.html" data-i18n="fPrivacy">Privacy</a>
+      <a href="https://app.gramlingo.online" target="_blank" rel="noopener noreferrer" data-i18n="fPlay">Play</a>
+    </div>
+    <div class="f-credit" data-i18n="fCredit">Built with care by Pulse Branding</div>
+  </div>
+</footer>
+
+
+
+
+<script src="http://127.0.0.1:8766/portfolio-collection/page-bridge.js"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

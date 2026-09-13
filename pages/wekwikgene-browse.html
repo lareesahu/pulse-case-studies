@@ -1,0 +1,835 @@
+<html lang="en"><head><base href="https://wekwikgene.wllsb.edu.cn/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="app-locale" content="en">
+    <meta name="csrf-token" content="QSjM63IPUdZ00c0xqbSCQzm7vKqfZPK0hcLSxGee">
+
+    <title>WeKwikGene</title>
+
+    <!-- Loading spinner -->
+    
+
+    <!-- Particles.js -->
+    
+
+    <link rel="preload" as="style" href="https://wekwikgene.wllsb.edu.cn/build/assets/index-BiE4Yj0Y.css"><link rel="preload" as="style" href="https://wekwikgene.wllsb.edu.cn/build/assets/app-BAo6srkd.css"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/app-CBoz4XcJ.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/index-oeUkDeQz.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/index.esm-Bm2meeC4.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/paginator.esm-CkYptVwI.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/confirmdialog.esm-BmaZ7XOD.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/selectbutton.esm-D_zEChvZ.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/accordiontab.esm-DMnhXY7A.js"><link rel="modulepreload" href="https://wekwikgene.wllsb.edu.cn/build/assets/overlaypanel.esm-a2flp_BJ.js"><link rel="stylesheet" href="https://wekwikgene.wllsb.edu.cn/build/assets/index-BiE4Yj0Y.css"><link rel="stylesheet" href="https://wekwikgene.wllsb.edu.cn/build/assets/app-BAo6srkd.css"><style type="text/css">
+.p-icon {
+    display: inline-block;
+}
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+@-webkit-keyframes p-icon-spin {
+0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+}
+100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+}
+}
+@keyframes p-icon-spin {
+0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+}
+100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+}
+}
+</style><style type="text/css">
+.p-virtualscroller {
+    position: relative;
+    overflow: auto;
+    contain: strict;
+    transform: translateZ(0);
+    will-change: scroll-position;
+    outline: 0 none;
+}
+.p-virtualscroller-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* contain: content; */
+    min-height: 100%;
+    min-width: 100%;
+    will-change: transform;
+}
+.p-virtualscroller-spacer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    transform-origin: 0 0;
+    pointer-events: none;
+}
+.p-virtualscroller .p-virtualscroller-loader {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.p-virtualscroller-loader.p-component-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-virtualscroller-loading-icon {
+    font-size: 2rem;
+}
+.p-virtualscroller-loading-icon.p-icon {
+    width: 2rem;
+    height: 2rem;
+}
+.p-virtualscroller-horizontal > .p-virtualscroller-content {
+    display: flex;
+}
+
+/* Inline */
+.p-virtualscroller-inline .p-virtualscroller-content {
+    position: static;
+}
+</style><style type="text/css">
+.p-dropdown {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+.p-dropdown-clear-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+.p-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.p-dropdown-label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1 1 auto;
+    width: 1%;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.p-dropdown-label-empty {
+    overflow: hidden;
+    opacity: 0;
+}
+input.p-dropdown-label {
+    cursor: default;
+}
+.p-dropdown .p-dropdown-panel {
+    min-width: 100%;
+}
+.p-dropdown-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.p-dropdown-items-wrapper {
+    overflow: auto;
+}
+.p-dropdown-item {
+    cursor: pointer;
+    font-weight: normal;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+.p-dropdown-item-group {
+    cursor: auto;
+}
+.p-dropdown-items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.p-dropdown-filter {
+    width: 100%;
+}
+.p-dropdown-filter-container {
+    position: relative;
+}
+.p-dropdown-filter-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+.p-fluid .p-dropdown {
+    display: flex;
+}
+.p-fluid .p-dropdown .p-dropdown-label {
+    width: 1%;
+}
+</style><style type="text/css">
+.p-inputswitch {
+    position: relative;
+    display: inline-block;
+}
+.p-inputswitch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+}
+.p-inputswitch-slider:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+}
+</style><style type="text/css">
+.p-dialog-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+.p-dialog-mask.p-component-overlay {
+    pointer-events: auto;
+}
+.p-dialog {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    max-height: 90%;
+    transform: scale(1);
+}
+.p-dialog-content {
+    overflow-y: auto;
+}
+.p-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.p-dialog-footer {
+    flex-shrink: 0;
+}
+.p-dialog .p-dialog-header-icons {
+    display: flex;
+    align-items: center;
+}
+.p-dialog .p-dialog-header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Fluid */
+.p-fluid .p-dialog-footer .p-button {
+    width: auto;
+}
+
+/* Animation */
+/* Center */
+.p-dialog-enter-active {
+    transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+.p-dialog-leave-active {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.p-dialog-enter-from,
+.p-dialog-leave-to {
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+/* Top, Bottom, Left, Right, Top* and Bottom* */
+.p-dialog-top .p-dialog,
+.p-dialog-bottom .p-dialog,
+.p-dialog-left .p-dialog,
+.p-dialog-right .p-dialog,
+.p-dialog-topleft .p-dialog,
+.p-dialog-topright .p-dialog,
+.p-dialog-bottomleft .p-dialog,
+.p-dialog-bottomright .p-dialog {
+    margin: 0.75rem;
+    transform: translate3d(0px, 0px, 0px);
+}
+.p-dialog-top .p-dialog-enter-active,
+.p-dialog-top .p-dialog-leave-active,
+.p-dialog-bottom .p-dialog-enter-active,
+.p-dialog-bottom .p-dialog-leave-active,
+.p-dialog-left .p-dialog-enter-active,
+.p-dialog-left .p-dialog-leave-active,
+.p-dialog-right .p-dialog-enter-active,
+.p-dialog-right .p-dialog-leave-active,
+.p-dialog-topleft .p-dialog-enter-active,
+.p-dialog-topleft .p-dialog-leave-active,
+.p-dialog-topright .p-dialog-enter-active,
+.p-dialog-topright .p-dialog-leave-active,
+.p-dialog-bottomleft .p-dialog-enter-active,
+.p-dialog-bottomleft .p-dialog-leave-active,
+.p-dialog-bottomright .p-dialog-enter-active,
+.p-dialog-bottomright .p-dialog-leave-active {
+    transition: all 0.3s ease-out;
+}
+.p-dialog-top .p-dialog-enter-from,
+.p-dialog-top .p-dialog-leave-to {
+    transform: translate3d(0px, -100%, 0px);
+}
+.p-dialog-bottom .p-dialog-enter-from,
+.p-dialog-bottom .p-dialog-leave-to {
+    transform: translate3d(0px, 100%, 0px);
+}
+.p-dialog-left .p-dialog-enter-from,
+.p-dialog-left .p-dialog-leave-to,
+.p-dialog-topleft .p-dialog-enter-from,
+.p-dialog-topleft .p-dialog-leave-to,
+.p-dialog-bottomleft .p-dialog-enter-from,
+.p-dialog-bottomleft .p-dialog-leave-to {
+    transform: translate3d(-100%, 0px, 0px);
+}
+.p-dialog-right .p-dialog-enter-from,
+.p-dialog-right .p-dialog-leave-to,
+.p-dialog-topright .p-dialog-enter-from,
+.p-dialog-topright .p-dialog-leave-to,
+.p-dialog-bottomright .p-dialog-enter-from,
+.p-dialog-bottomright .p-dialog-leave-to {
+    transform: translate3d(100%, 0px, 0px);
+}
+
+/* Maximize */
+.p-dialog-maximized {
+    -webkit-transition: none;
+    transition: none;
+    transform: none;
+    width: 100vw !important;
+    height: 100vh !important;
+    top: 0px !important;
+    left: 0px !important;
+    max-height: 100%;
+    height: 100%;
+}
+.p-dialog-maximized .p-dialog-content {
+    flex-grow: 1;
+}
+
+/* Position */
+.p-dialog-left {
+    justify-content: flex-start;
+}
+.p-dialog-right {
+    justify-content: flex-end;
+}
+.p-dialog-top {
+    align-items: flex-start;
+}
+.p-dialog-topleft {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.p-dialog-topright {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.p-dialog-bottom {
+    align-items: flex-end;
+}
+.p-dialog-bottomleft {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.p-dialog-bottomright {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.p-confirm-dialog .p-dialog-content {
+    display: flex;
+    align-items: center;
+}
+</style><style type="text/css">
+.p-inputnumber {
+    display: inline-flex;
+}
+.p-inputnumber-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button .p-button-label,
+.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button .p-button-label {
+    display: none;
+}
+.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-up {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0;
+}
+.p-inputnumber-buttons-stacked .p-inputnumber-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-down {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0;
+}
+.p-inputnumber-buttons-stacked .p-inputnumber-button-group {
+    display: flex;
+    flex-direction: column;
+}
+.p-inputnumber-buttons-stacked .p-inputnumber-button-group .p-button.p-inputnumber-button {
+    flex: 1 1 auto;
+}
+.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-up {
+    order: 3;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.p-inputnumber-buttons-horizontal .p-inputnumber-input {
+    order: 2;
+    border-radius: 0;
+}
+.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-down {
+    order: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.p-inputnumber-buttons-vertical {
+    flex-direction: column;
+}
+.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-up {
+    order: 1;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+}
+.p-inputnumber-buttons-vertical .p-inputnumber-input {
+    order: 2;
+    border-radius: 0;
+    text-align: center;
+}
+.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-down {
+    order: 3;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+}
+.p-inputnumber-input {
+    flex: 1 1 auto;
+}
+.p-fluid .p-inputnumber {
+    width: 100%;
+}
+.p-fluid .p-inputnumber .p-inputnumber-input {
+    width: 1%;
+}
+.p-fluid .p-inputnumber-buttons-vertical .p-inputnumber-input {
+    width: 100%;
+}
+</style><style type="text/css">
+.p-paginator-default {
+    display: flex;
+}
+.p-paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.p-paginator-left-content {
+    margin-right: auto;
+}
+.p-paginator-right-content {
+    margin-left: auto;
+}
+.p-paginator-page,
+.p-paginator-next,
+.p-paginator-last,
+.p-paginator-first,
+.p-paginator-prev,
+.p-paginator-current {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+}
+.p-paginator-element:focus {
+    z-index: 1;
+    position: relative;
+}
+</style><style type="text/css">
+.p-progress-spinner {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.p-progress-spinner::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.p-progress-spinner-svg {
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+</style><style type="text/css">
+.p-accordion-header-action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    position: relative;
+    text-decoration: none;
+}
+.p-accordion-header-action:focus {
+    z-index: 1;
+}
+.p-accordion-header-text {
+    line-height: 1;
+}
+</style><style type="text/css">
+.p-overlaypanel {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+}
+.p-overlaypanel-flipped {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.p-overlaypanel-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animation */
+.p-overlaypanel-enter-from {
+    opacity: 0;
+    transform: scaleY(0.8);
+}
+.p-overlaypanel-leave-to {
+    opacity: 0;
+}
+.p-overlaypanel-enter-active {
+    transition: transform 0.12s cubic-bezier(0, 0, 0.2, 1), opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+}
+.p-overlaypanel-leave-active {
+    transition: opacity 0.1s linear;
+}
+.p-overlaypanel:after,
+.p-overlaypanel:before {
+    bottom: 100%;
+    left: calc(var(--overlayArrowLeft, 0) + 1.25rem);
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.p-overlaypanel:after {
+    border-width: 8px;
+    margin-left: -8px;
+}
+.p-overlaypanel:before {
+    border-width: 10px;
+    margin-left: -10px;
+}
+.p-overlaypanel-flipped:after,
+.p-overlaypanel-flipped:before {
+    bottom: auto;
+    top: 100%;
+}
+.p-overlaypanel.p-overlaypanel-flipped:after {
+    border-bottom-color: transparent;
+}
+.p-overlaypanel.p-overlaypanel-flipped:before {
+    border-bottom-color: transparent;
+}
+</style><style>html{scroll-behavior:auto!important;scrollbar-width:none}body{overflow-x:hidden!important}*{animation:none!important;transition:none!important}button,input,select,textarea,a{pointer-events:none!important}.capture-hero img{width:100%;display:block}.capture-hero{padding:0!important;margin:0!important;min-height:0!important}.spline-fixed{display:none!important}.chat-widget,.inquiry-cart-fab,#cookie-banner{display:none!important}body:has(.capture-hero) nav.nav{display:none!important}section[style*="opacity: 0"]{opacity:1!important}</style></head>
+<body>
+<div id="particles-js"><canvas class="particles-js-canvas-el" width="1440" height="900" style="width: 100%; height: 100%;"></canvas></div>
+
+<aside class="version-switcher" data-version-switcher="" data-expanded="false" role="button" tabindex="0" aria-label="Expand version switcher" title="Expand version switcher" aria-expanded="false" data-bound="true">
+    <div class="version-switcher__row">
+        <div class="version-switcher__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M14 12c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-2-9c-4.97 0-9 4.03-9 9H0l4 4 4-4H5c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.51 0-2.91-.49-4.06-1.3l-1.42 1.44C8.04 20.3 9.94 21 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"></path>
+            </svg>
+        </div>
+        <div class="version-switcher__content" data-version-switcher-content="">
+            <a href="/legacy/categories" class="version-switcher__link" data-version-switcher-link="" aria-label="Return to legacy version" title="Return to legacy version">
+                <span class="version-switcher__label" data-version-switcher-label="">Return to legacy version</span>
+            </a>
+            <span class="version-switcher__subtitle" data-version-switcher-subtitle="" style="cursor:pointer; display:inline-block; margin-top:2px; color:#ffffff;">Why go back?</span>
+        </div>
+    </div>
+</aside>
+
+<div id="vs-feedback-modal" class="vs-modal-backdrop" style="display: none;">
+    <div class="vs-modal-card">
+        <div class="vs-modal-body">
+            <!-- 头部 -->
+            <div class="vs-modal-header">
+                <div class="vs-header-left">
+                    <div class="vs-header-icon">
+                        <svg viewBox="0 0 512 512">
+                            <path d="M32 96l320 0 0-64c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l96 96c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-96 96c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6l0-64L32 160c-17.7 0-32-14.3-32-32s14.3-32 32-32zM480 352c17.7 0 32 14.3 32 32s-14.3 32-32 32l-320 0 0 64c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-96-96c-6-6-9.4-14.1-9.4-22.6s3.4-16.6 9.4-22.6l96-96c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 64 320 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="vs-header-title" id="vs-modal-title">Feedback on Version Switch</h3>
+                        <p class="vs-header-subtitle">Switch to Legacy Version &amp; Quick Feedback</p>
+                    </div>
+                </div>
+                <button type="button" class="vs-btn-close" id="vs-btn-close" title="关闭">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- 提示条 -->
+            <div class="vs-modal-banner">
+                <svg class="vs-banner-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path>
+                </svg>
+                <span id="vs-banner-text">You are switching to legacy version. Your feedback helps us improve.</span>
+            </div>
+
+            <!-- 表单 -->
+            <form class="vs-modal-form" id="vs-feedback-form">
+                <input type="hidden" name="direction">
+                <!-- 邮箱 -->
+                <div class="vs-field-group">
+                    <label class="vs-field-label" for="vs-email">
+                        <span id="vs-email-label">Contact Email</span><span class="vs-required">*</span>
+                    </label>
+                    <div class="vs-input-wrapper">
+                        <div class="vs-input-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </div>
+                        <input id="vs-email" name="email" type="email" required="" class="vs-input-text" placeholder="name@institution.edu.cn / westlake.edu.cn">
+                    </div>
+                </div>
+
+                <!-- 核心原因/反馈分类 -->
+                <div class="vs-field-group">
+                    <label class="vs-field-label">
+                        <span id="vs-category-label">Reason for switching / Feedback type</span><span class="vs-required">*</span>
+                    </label>
+                    <div class="vs-chip-grid">
+                        <label class="vs-chip-item vs-chip-selected">
+                            <input type="radio" name="feedback_type" value="functionality" checked="" required="">
+                            <div class="vs-chip-box">
+                                <svg viewBox="0 0 24 24"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 2v2m0 16v2M2 12h2m16 0h2m-3.05-6.95-1.41 1.41M6.46 17.54l-1.41 1.41m0-13.9 1.41 1.41m11.08 11.08 1.41 1.41"></path></svg>
+                                <span class="vs-chip-text" data-cat="functionality">Functionality</span>
+                            </div>
+                        </label>
+                        <label class="vs-chip-item">
+                            <input type="radio" name="feedback_type" value="usability" required="">
+                            <div class="vs-chip-box">
+                                <svg viewBox="0 0 24 24"><path d="m14 12 4 4m-8-8 4 4m-8-8 4 4m-5 9 13-13a2 2 0 0 1 2.83 2.83L5.83 20.83a2 2 0 0 1-2.83-2.83Z"></path></svg>
+                                <span class="vs-chip-text" data-cat="usability">Usability</span>
+                            </div>
+                        </label>
+                        <label class="vs-chip-item">
+                            <input type="radio" name="feedback_type" value="performance" required="">
+                            <div class="vs-chip-box">
+                                <svg viewBox="0 0 24 24"><path d="m13 2-2 7h5l-4 13 2-8H9l4-12Z"></path></svg>
+                                <span class="vs-chip-text" data-cat="performance">Performance</span>
+                            </div>
+                        </label>
+                        <label class="vs-chip-item">
+                            <input type="radio" name="feedback_type" value="other" required="">
+                            <div class="vs-chip-box">
+                                <svg viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                                <span class="vs-chip-text" data-cat="other">Other</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 详细原因/建议 -->
+                <div class="vs-field-group">
+                    <label class="vs-field-label" for="vs-reason">
+                        <span id="vs-reason-label">Detailed reason / Suggestion</span><span class="vs-required">*</span>
+                    </label>
+                    <textarea id="vs-reason" name="reason" required="" rows="3" class="vs-textarea" placeholder="Please briefly explain what felt difficult or what you would like retained..."></textarea>
+                </div>
+
+                <!-- 底部操作栏 -->
+                <div class="vs-modal-actions">
+                    <div class="vs-action-buttons">
+                        <button type="button" class="vs-btn-secondary" id="vs-btn-cancel">Cancel</button>
+                        <button type="submit" class="vs-btn-primary" id="vs-btn-submit">
+                            <span id="vs-btn-submit-text">Submit &amp; Switch</span>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7 7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 底部极简品牌徽标栏 -->
+        <div class="vs-modal-footer-brand">
+            <span id="vs-brand-left">WeKwikGene Westlake Lab Plasmid Platform</span>
+            <span id="vs-brand-right">Iterative Improvement &amp; UX Assurance</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="app" class="app" data-v-app=""><div x-data="{ open: false }"><div class="app-menu grid"><div class="col-2 lg:col-2 xl:col-3 app-menu__logo"><div class="app-logo w-8 hidden lg:flex"><a href="https://www.wllsb.edu.cn" class="westlake-lab-link"></a><a href="https://wekwikgene.wllsb.edu.cn"><img src="https://wekwikgene.wllsb.edu.cn/build/assets/wekwikgene-westlake-logo-D0L71N6a.svg" alt="WestLake Laboratory logo"></a></div><div class="lg:hidden cursor-pointer" x-on:click="open = !open"><i class="pi pi-bars text-xl"></i></div></div><div class="col-6 lg:col-6 xl:col-5 app-menu__navigation"><div><a href="https://wekwikgene.wllsb.edu.cn/about" class=""> About </a><a href="https://wekwikgene.wllsb.edu.cn/categories" class="active"> Browse </a><a href="https://wekwikgene.wllsb.edu.cn/labs" class=""> Depositing Labs </a><a href="https://wekwikgene.wllsb.edu.cn/deposit" class=""> Deposit </a><a href="https://wekwikgene.wllsb.edu.cn/contact" class=""> Contact </a></div></div><div class="col-10 lg:col-4 app-menu__search"><form class="secondary-search" action="https://wekwikgene.wllsb.edu.cn/plasmids" method="get"><input type="text" name="search" placeholder="Search Plasmids"><button type="submit" class="secondary-search__submit" aria-label="Search"><i class="pi pi-search text-lg text-gray-400" aria-hidden="true"></i></button></form><a href="https://wekwikgene.wllsb.edu.cn/sign-in" class="action-text-button"><p>Sign in</p></a><a href="https://wekwikgene.wllsb.edu.cn/orders/create" class="app-menu__icon-link app-menu__icon-link--cart" aria-label="Cart"><span class="wishlist-badge">0</span><i class="pi pi-shopping-cart app-menu__icon-symbol" aria-hidden="true"></i></a><div class="p-selectbutton p-buttonset p-component public-locale-switcher hidden lg:block app-menu__locale-switcher" role="group" aria-disabled="false" aria-busy="false" aria-label="Language"><div tabindex="-1" aria-label="中文" role="radio" aria-checked="false" class="p-button p-component"><span class="p-button-label">中文</span></div><div tabindex="0" aria-label="EN" role="radio" aria-checked="true" class="p-button p-component p-highlight"><span class="p-button-label">EN</span></div></div></div></div><div class="app-menu-mobile lg:hidden push-left" x-bind:class="open ? 'push-right' : 'push-left'"><i class="pi pi-times app-menu-mobile__close-button" x-on:click="open = !open"></i><div class="app-menu-mobile__logo"><div class="app-logo"><a href="https://www.wllsb.edu.cn" class="westlake-lab-link"></a><a href="https://wekwikgene.wllsb.edu.cn"><img src="https://wekwikgene.wllsb.edu.cn/build/assets/wekwikgene-westlake-logo-D0L71N6a.svg" alt="WestLake Laboratory logo"></a></div></div><div class="app-menu-mobile__navigation"><a href="https://wekwikgene.wllsb.edu.cn/about" class=""> About </a><a href="https://wekwikgene.wllsb.edu.cn/categories" class="active"> Browse </a><a href="https://wekwikgene.wllsb.edu.cn/labs" class=""> Depositing Labs </a><a href="https://wekwikgene.wllsb.edu.cn/deposit" class=""> Deposit </a><a href="https://wekwikgene.wllsb.edu.cn/contact" class=""> Contact </a><div class="p-selectbutton p-buttonset p-component public-locale-switcher app-menu-mobile__locale-switcher" role="group" aria-disabled="false" aria-busy="false" aria-label="Language"><div tabindex="-1" aria-label="中文" role="radio" aria-checked="false" class="p-button p-component"><span class="p-button-label">中文</span></div><div tabindex="0" aria-label="EN" role="radio" aria-checked="true" class="p-button p-component p-highlight"><span class="p-button-label">EN</span></div></div></div></div></div><div><div class="browse-categories-wrapper container"><div class="browse-plasmid-video-one"><img src="https://wekwikgene.wllsb.edu.cn/build/assets/plasmid-image-CTixYnnP.png" alt="Image of a plasmid" class="plasmid-video plasmid-video-general breathe-rotate"></div><div class="browse-plasmid-video-two"><img src="https://wekwikgene.wllsb.edu.cn/build/assets/plasmid-image-CTixYnnP.png" alt="Image of a plasmid" class="plasmid-video plasmid-video-general reverse-breathe-rotate"></div><div class="flex flex-column align-items-center"><h1 class="uppercase font-semibold"> Browse by expression </h1><p class="browse-categories__description text-center md:w-7 mt-2"> Our curated resources group plasmids together based on type or application. Browse our expressions to find the plasmids you need and relevant detailed information. </p></div><div class="flex flex-wrap mt-8"><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=1"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Bacterial expression.png" class="category-card__image" alt="Bacterial expression"></div><h4 class="category-card__title">Bacterial expression</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=2"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/C. elegans expression.png" class="category-card__image" alt="C. elegans expression"></div><h4 class="category-card__title">C. elegans expression</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=3"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Lenti.png" class="category-card__image" alt="Lenti"></div><h4 class="category-card__title">Lenti</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=4"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/AAV.png" class="category-card__image" alt="AAV"></div><h4 class="category-card__title">AAV</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=5"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Mammalian expression.png" class="category-card__image" alt="Mammalian expression"></div><h4 class="category-card__title">Mammalian expression</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=6"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Drosophila.png" class="category-card__image" alt="Drosophila"></div><h4 class="category-card__title">Drosophila</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=7"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Planaria.png" class="category-card__image" alt="Planaria"></div><h4 class="category-card__title">Planaria</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=8"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Plant.png" class="category-card__image" alt="Plant"></div><h4 class="category-card__title">Plant</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=9"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Yeast.png" class="category-card__image" alt="Yeast"></div><h4 class="category-card__title">Yeast</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids?vector_type_id=10"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/assets/categories/Zebrafish.png" class="category-card__image" alt="Zebrafish"></div><h4 class="category-card__title">Zebrafish</h4></a><a class="category-card col-12 sm:col-6 md:col-4 xl:px-6 mt-4 lg:mt-6" href="https://wekwikgene.wllsb.edu.cn/plasmids"><div class="category-card__image-wrapper"><img src="https://wekwikgene.wllsb.edu.cn/build/assets/three-dots-nD1wU1k4.svg" class="category-card__image" alt="Other"></div><h4 class="category-card__title">Other</h4></a></div></div></div><!----></div>
+<footer>
+    <div class="container flex flex-column md:flex-row gap-4 md:gap-0">
+        <div class="footer__section-one">
+            <div class="app-logo w-10 md:w-5">
+    <a href="https://www.wllsb.edu.cn" class="westlake-lab-link"></a>
+
+    <a href="https://wekwikgene.wllsb.edu.cn">
+        <img src="https://wekwikgene.wllsb.edu.cn/build/assets/wekwikgene-westlake-logo-D0L71N6a.svg" alt="WestLake Laboratory logo">
+    </a>
+</div>
+
+            <form class="search mt-5 w-12 md:w-11 mt-2" action="https://wekwikgene.wllsb.edu.cn/plasmids">
+    <input type="text" name="search">
+    <i class="pi pi-search text-xl text-gray-400 ml-2"></i>
+
+    <button class="secondary-button button-md px-6">
+        Search
+    </button>
+</form>        </div>
+        <div class="footer__section-two">
+            <h4>About</h4>
+            <p class="footer__about-copy">WeKwikGene is a plasmid repository run by Westlake Laboratory based in the XiHu district of Hangzhou, Zhejiang province, China.</p>
+        </div>
+        <div class="footer__section-three">
+            <h4>Sitemap</h4>
+            <div class="site-map__group flex gap-6 md:gap-0 md:justify-content-between">
+                <div class="site-map__one flex flex-column">
+                    <a href="https://wekwikgene.wllsb.edu.cn" class="site-map__link">Home</a>
+                    <a href="https://wekwikgene.wllsb.edu.cn/about" class="site-map__link">About</a>
+                    <a href="https://wekwikgene.wllsb.edu.cn/contact" class="site-map__link">Contact</a>
+                    <a href="https://www.wllsb.edu.cn" class="site-map__link">Westlake Laboratory</a>
+                </div>
+                <div class="site-map__two flex flex-column">
+                    <a href="https://wekwikgene.wllsb.edu.cn/deposit" class="site-map__link">Deposit</a>
+                    <a href="https://wekwikgene.wllsb.edu.cn/orders/create" class="site-map__link">Request</a>
+                    <a href="https://wekwikgene.wllsb.edu.cn/categories" class="site-map__link">Browse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright" class="w-full bg-primary text-white py-5">
+        <div class="container">
+            <div>
+                <p>浙ICP备2022011639号 | 浙公网安备33010602012916号</p>
+                <p>© 2026 Westlake Laboratory. All Rights Reserved.</p>
+                <p>
+                    <a href="https://wekwikgene.wllsb.edu.cn/privacy-policy" class="hover:text-secondary underline">
+                        Privacy Policy                    </a>
+
+                    <span style="margin:0 10px">|</span>
+
+                    <a href="https://wekwikgene.wllsb.edu.cn/terms-of-service" class="hover:text-secondary underline">
+                        Terms of Service                    </a>
+                </p>
+            </div>
+
+            <div>
+                <!--<p>地址 ：浙江省杭州市西湖区龙山街18号 </p>-->
+                <!--<p>电话 ： 0571-87089787</p>-->
+                <p>咨询电话： 18845635280</p>
+                <p>邮政编码： 310024</p>
+                <p>
+                    <a href="https://wekwikgene.wllsb.edu.cn/documents/wekwikgene-plasmid-deposit-agreement" target="_blank" rel="noopener noreferrer" class="hover:text-secondary underline">
+                        WeKwikGene Plasmid Deposit Agreement
+                    </a>
+                </p>
+            </div>
+
+            <div>
+                <!--<p>邮编 ：310024</p>-->
+                <div class="footer-contact-row">
+                    <span class="footer-contact-row__label">邮箱：</span>
+                    <span class="footer-contact-row__value">
+                        <a href="mailto:wekwikgene@westlake.edu.cn" class="hover:text-secondary">
+                            wekwikgene@westlake.edu.cn
+                        </a>
+                    </span>
+                </div>
+                <div class="footer-contact-row">
+                    <span class="footer-contact-row__label">地址：</span>
+                    <span class="footer-contact-row__value">浙江省杭州市西湖区龙山街18号</span>
+                </div>
+                <p>
+                    <a href="https://wekwikgene.wllsb.edu.cn/documents/industry-mta" target="_blank" rel="noopener noreferrer" class="hover:text-secondary underline">
+                        Industry MTA                    </a>
+
+                    <span style="margin:0 10px">|</span>
+
+                    <a href="https://wekwikgene.wllsb.edu.cn/documents/non-profit-mta" target="_blank" rel="noopener noreferrer" class="hover:text-secondary underline">
+                        Non-Profit MTA                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="cookie-consent-js cookie-consent-box-wrapper" style="transition: transform 0.75s ease-in-out; transform: translateY(0px);">
+    <div class="cookie-consent-box">
+        <div class="message">
+            <img src="https://wekwikgene.wllsb.edu.cn/build/assets/cookie-box-Csbg_v3W.svg" alt="Cookie in a box image">
+            <p>
+                We care about your data, and we'd use cookies only to improve your experience. By using this website, you accept our <a href="https://wekwikgene.wllsb.edu.cn/cookies-policy" class="link">Cookies Policy</a>.            </p>
+        </div>
+
+        <button class="js-cookie-consent-agree button-agree">
+            Accept        </button>
+    </div>
+</section>
+
+    
+
+
+
+<div><div><div class="Vue-Toastification__container top-left"></div></div><div><div class="Vue-Toastification__container top-center"></div></div><div><div class="Vue-Toastification__container top-right"></div></div><div><div class="Vue-Toastification__container bottom-left"></div></div><div><div class="Vue-Toastification__container bottom-center"></div></div><div><div class="Vue-Toastification__container bottom-right"></div></div></div><script src="http://127.0.0.1:8766/portfolio-collection/page-bridge.js"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
