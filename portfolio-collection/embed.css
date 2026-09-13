@@ -2,5 +2,7 @@
 body.pb-embed .site-header,
 body.pb-embed .collection-footer,
 body.pb-embed .skip{display:none !important}
+/* The embed is the collaboration story itself: begin at section 01, not the standalone cover. */
+body.pb-embed .hero#opening{display:none !important}
 body.pb-embed{padding-top:0 !important}
 html.pb-embed-html,body.pb-embed{overflow-x:hidden}
