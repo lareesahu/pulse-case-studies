@@ -26,15 +26,15 @@
   color:#E1EEF0;
   border-bottom-color:rgba(225,238,240,.14);
 }
-.collection-page .header-caption{color:#B7CDDB}
-.collection-page .card-top>span{color:#B7CDDB}
+.collection-page .header-caption{color:#CFE1EB}
+.collection-page .card-top>span{color:#CFE1EB}
 
 .collection-page .skip{background:#050C16;color:#E1EEF0}
 
-.collection-page .collection-intro .eyebrow{color:#9DBBD6}
+.collection-page .collection-intro .eyebrow{color:#BAD4E6}
 .collection-page .intro-bottom p{color:#D3E2EA}
 
-.collection-page .filters button{color:#C9DAE4}
+.collection-page .filters button{color:#D8E7EF}
 .collection-page .filters button[aria-pressed="true"]{color:#E1EEF0}
 
 .collection-page .collection-card{
