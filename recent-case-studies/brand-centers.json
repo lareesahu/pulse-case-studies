@@ -1,0 +1,136 @@
+[
+  {
+    "id":"pulse-branding","name":"Pulse Branding","page":"index.html","theme":"pulse-branding",
+    "heading":"A point of view, made visible.","intro":"The agency identity frames the collection. Midnight blue, a cool light ground and a measured contrast between Montserrat and italic Noto Serif Display follow the current website.",
+    "status":"Notion center + current website","source":"https://app.notion.com/p/5fd2c0a4a4b0450bbbaa0d688fd356f6","sourceLabel":"Open the existing Pulse Branding center",
+    "basis":"Existing Notion Brand Center (2023), unchanged 2025 logo master and the current www.pulse-branding.com homepage inspected 7 September 2026. Colours below are verified website values.",
+    "notes":"The public /brand-center page returned Page Not Found. The older center includes Gotu and Tenor Sans, whereas the live homepage uses Montserrat with Noto Serif Display italic. An AI-maintained 2026 bible contains conflicting HEX/RGB pairs; it is not treated as an approved replacement. These versions are kept separate.",
+    "logos":[{"file":"assets/pulse/wordmark.svg","label":"Original 2025 gradient wordmark","bg":"#E1EEF0"}],
+    "colors":[["Midnight","#0A1931","Current website background"],["Light ground","#E1EEF0","Current website text / light ground"],["Mid Blue","#2163AF","Current website blue"],["Violet","#291C53","Current website violet"]],
+    "type":[{"family":"Montserrat","css":"PulseMontserrat, sans-serif","weight":500,"sample":"A point of view.","role":"Current website heading / Medium 500"},{"family":"Noto Serif Display","css":"NotoSerifDisplay, serif","weight":300,"italic":true,"sample":"A human perspective.","role":"Current homepage emphasis / Italic 300"},{"family":"Montserrat","css":"PulseMontserrat, sans-serif","weight":400,"sample":"Strategy, identity and experience.","role":"Current website body / Regular 400"}],
+    "application":"The collection’s introduction and agency reference use this current website identity. Each client’s case remains in its own visual language."
+  },
+  {
+    "id":"neolabcare","name":"NeoLabCare","page":"neolabcare.html","theme":"neolabcare",
+    "heading":"Precision, with a human voice.",
+    "intro":"The identity is more than a black bottle. A custom wordmark, a warm near-black palette, carefully weighted sans-serif type and a contrasting serif form a complete visual language.",
+    "status":"Live brand book · 2026.3","source":"https://www.neolabcare.com/brand.html","sourceLabel":"Open the NeoLabCare brand center",
+    "basis":"Logo downloads, colour system and typography sections of the live brand book, checked 7 September 2026. This replaces the earlier incomplete brand-source search.",
+    "notes":"The book's logo section and later download section differ on minimum size and primary variant. This display follows the download section's gold-on-dark usage and the stricter 120px minimum. It does not copy the book's inconsistent product or efficacy claims. Typography specimens follow the identity table; the website's separate CSS table specifies 600-weight interface labels and 400-weight body text.",
+    "logos":[
+      {"file":"assets/brand-center/neolabcare/gold.svg","label":"Sand gold / dark application","bg":"#0A0A0A"},
+      {"file":"assets/brand-center/neolabcare/white.svg","label":"White / dark application","bg":"#0A0A0A"},
+      {"file":"assets/brand-center/neolabcare/dark.svg","label":"Dark / light application","bg":"#F5F5F0"},
+      {"file":"assets/brand-center/neolabcare/icon.svg","label":"Standalone icon / master asset","bg":"#0A0A0A","compact":true}
+    ],
+    "colors":[["Void Black","#0A0A0A","Primary background"],["Charcoal","#1A1A1A","Surface / layer"],["Sand Gold","#C8B89A","Accent / rules / emphasis"],["Off Black","#111111","Secondary background"],["Mid","#242424","Mid surface"],["Gold Light","#E0D0B0","Light accent"],["Off White","#F5F5F0","Primary text"]],
+    "colorRule":"Colour specimens are reference chips, not suggested page fills. Sand Gold is reserved for accents, rules and typographic emphasis. Crimson #C1121F belongs to physical applications only; it is not a digital accent.",
+    "type":[
+      {"family":"Poppins","css":"Poppins, sans-serif","weight":500,"spacing":"-.03em","sample":"Quiet precision.","role":"Display / Medium 500 / −0.03em"},
+      {"family":"Noto Serif Display","css":"NotoSerifDisplay, serif","weight":400,"italic":true,"sample":"A human touch.","role":"Emphasis / Italic 400 / natural tracking"},
+      {"family":"Poppins","css":"Poppins, sans-serif","weight":300,"sample":"Considered in every detail.","role":"Subtitle / Light 300 / 1.65 line height"},
+      {"family":"Poppins","css":"Poppins, sans-serif","weight":500,"spacing":".28em","sample":"NEOLAB.CARE","role":"Brand-book label / Medium 500 / 0.28em","small":true}
+    ],
+    "application":"Packaging, the product image system and the original motion study follow below. Historical artwork remains labelled as development, rather than silently treated as current production approval."
+  },
+  {
+    "id":"robotist","name":"Robotist","page":"robotist.html","theme":"robotist","heading":"An identity with room to breathe.",
+    "intro":"A precise wordmark, widely spaced typography and an ocean-blue hierarchy give the robotics brand a recognisable voice before a product is introduced.",
+    "status":"Recovered brand guide","source":"brand-sources.html#robotist","sourceLabel":"Brand-guide source record",
+    "basis":"Recovered robotist-brand-system/robotist-brand-guide.html. The live site's system-font implementation is recorded separately; it does not replace the guide's Poppins typography.",
+    "notes":"A public brand-center URL is not yet verified. This is a portfolio reference assembled from the recovered guide, not a newly approved client brand book.",
+    "logos":[{"file":"assets/robotist/wordmark.svg","label":"Original white vector wordmark","bg":"#060D18"}],
+    "colors":[["Deep navy","#060D18","Base"],["Navy surface","#0C1828","Surface"],["Raised navy","#142035","Layer"],["Structural navy","#1E3550","Structure"],["Ocean Blue","#4AA8C8","Accent"],["Arctic Tint","#A8DCEF","Highlight"],["Off White","#F0F4F8","Light application"]],
+    "type":[{"family":"Poppins","css":"Poppins, sans-serif","weight":500,"spacing":".20em","sample":"ROBOTIST","role":"Display / Medium 500 / uppercase / 0.20em"},{"family":"Poppins","css":"Poppins, sans-serif","weight":300,"spacing":".06em","sample":"HUMAN BY DESIGN","role":"Section / Light 300 / uppercase / 0.06em"},{"family":"Poppins","css":"Poppins, sans-serif","weight":300,"spacing":".01em","sample":"A clearer introduction to robotics.","role":"Body / Light 300 / 0.01em"}],
+    "application":"The character system, product presentation and digital applications show how this identity behaves beyond the logo."
+  },
+  {
+    "id":"vodkiss","name":"Vodkiss","page":"vodkiss.html","theme":"vodkiss","heading":"An expressive family, not a single label.",
+    "intro":"The original wordmarks, five-colour palette and three type families connect identity, botanical illustration and packaging.",
+    "status":"Recovered identity & packaging deck","source":"brand-sources.html#vodkiss","sourceLabel":"Identity-deck source record",
+    "basis":"Pulse Branding – Vodkiss Brand Identity and Packaging Design.pptx, identity palette and typography on slides 19–20.",
+    "notes":"No standalone public brand-center URL is verified. Type-family assignments in this portfolio are presentation adaptations, not a claimed approved website type scale.",
+    "logos":[{"file":"assets/vodkiss/logo.webp","label":"Original Latin wordmark artwork","bg":"#F1ECDB"},{"file":"assets/vodkiss/logo-cn.webp","label":"Original Chinese wordmark artwork","bg":"#F1ECDB"}],
+    "colors":[["Core 01","#464D48","Identity palette"],["Core 02","#C9B875","Identity palette"],["Core 03","#5C6E3F","Identity palette"],["Core 04","#D8817A","Identity palette"],["Core 05","#708D8D","Identity palette"]],
+    "type":[{"family":"Cinzel Decorative","css":"Cinzel, serif","weight":900,"sample":"VODKISS","role":"Decorative identity type / Black 900"},{"family":"Aboreto","css":"Aboreto, serif","weight":400,"sample":"A LITTLE OCCASION","role":"Secondary identity family / Regular 400"},{"family":"Tw Cen MT","css":"TwCen, sans-serif","weight":400,"sample":"Flavour, with a sense of occasion.","role":"Supporting type / Regular 400"}],
+    "application":"The flavour labels, botanical worlds, gift packaging and flat production artwork are the identity in application."
+  },
+  {
+    "id":"wekwikgene","name":"WeKwikGene","page":"../wekwikgene-case-study/index.html","theme":"wkg-brand","heading":"A shared language for science.",
+    "intro":"The combined Westlake / WeKwikGene lockup, scientific colour hierarchy and Alibaba Sans are presented as one system, alongside the original DNA visuals.",
+    "status":"2024 case-study identity","source":"brand-sources.html#wekwikgene","sourceLabel":"Historical and live source comparison",
+    "basis":"WeKwikGene Case Study 2024.pptx and the recovered original logo package. The original case-study palette is retained.",
+    "notes":"A public brand center is not yet verified. Live website aqua and orange differ slightly from the 2024 deck. They are documented as implementation differences, not silently normalised into the historical case.",
+    "logos":[{"file":"../wekwikgene-case-study/assets/logo-lockup.webp","label":"Original combined institutional lockup","bg":"#F5F6F8"}],
+    "colors":[["Scientific blue","#144168","Primary"],["Aqua","#59A7BE","2024 case palette"],["Orange","#EE8D00","2024 case palette"],["Light ground","#F5F6F8","Case-study ground"]],
+    "type":[{"family":"Alibaba Sans","css":"Alibaba, sans-serif","weight":400,"sample":"Science, shared.","role":"Original identity family / Regular 400"}],
+    "application":"The original case contains logo, colour, type, DNA motion and platform applications. Its established composition and motion remain intact."
+  },
+  {
+    "id":"gramlingo","name":"GramLingo","page":"gramlingo.html","theme":"gramlingo","heading":"Learning has a visual personality.",
+    "intro":"A warm sunset palette, rounded display lettering and the original Gramlin build recognition across the landing page and learning worlds.",
+    "status":"Source-site identity · center URL unverified","source":"https://gramlingo.online/","sourceLabel":"View the source landing page",
+    "basis":"Original landing-page logo, served fonts and colours. This reference records the current source identity; it is not a substitute for a separately approved brand book.",
+    "notes":"The dedicated brand-center location remains unverified. App typography variations stay visible in the unaltered source screenshots. Native-app release is not implied.",
+    "logos":[{"file":"assets/new/gramlingo/gramlingo-logo.webp","label":"Original GramLingo wordmark","bg":"#FFF5EE"}],
+    "colors":[["Sunset","#FF8C42","Primary brand colour"],["Cream","#FFF5EE","Ground"],["Dark brown","#2D1B10","Text"],["Landing green","#8FD14F","Supporting colour"]],
+    "type":[{"family":"Baloo 2","css":"CaseBaloo, sans-serif","weight":800,"sample":"A little play.","role":"Display / ExtraBold 800"},{"family":"DM Sans","css":"CaseDM, sans-serif","weight":400,"sample":"One question. A world to explore.","role":"Landing-page body / Regular 400"}],
+    "application":"The original Gramlin poses, world covers, landing page and mobile learning screens demonstrate the wider identity."
+  },
+  {
+    "id":"ancient-science-of-china","name":"Ancient Science of China","page":"ancient-science-of-china.html","theme":"asoc","heading":"A mark. A script. A field of knowledge.",
+    "intro":"The cinnabar mark, warm paper, brown ink and contrasting Latin and Chinese typefaces establish the catalogue's identity.",
+    "status":"User-confirmed site · center URL unverified","source":"https://ancientscienceofchina.com/","sourceLabel":"View the correct source website",
+    "basis":"The user-confirmed domain and its observed ancient-science-of-china-n9pv.onrender.com deployment. Original asoc-mark-cinnabar.svg, served colours and fonts.",
+    "notes":"The dedicated brand center and current source checkout remain unverified. The rejected Astro project and its deployments are not sources for this reference.",
+    "logos":[{"file":"assets/new/asoc/mark.svg","label":"Original cinnabar mark","bg":"#F4EEE1","compact":true}],
+    "colors":[["Paper","#F4EEE1","Identity ground"],["Homepage paper","#F6F1E8","Digital surface"],["Ink","#3B1907","Text"],["Cinnabar","#B8452E","Mark / accent"],["Bronze","#8B7355","Supporting colour"]],
+    "type":[{"family":"Libre Baskerville","css":"CaseLibre, serif","weight":400,"sample":"Knowledge, made discoverable.","role":"Latin display / Regular 400"},{"family":"Work Sans","css":"CaseWork, sans-serif","weight":400,"sample":"A catalogue of connections.","role":"Latin interface / Regular 400"},{"family":"Noto Serif SC","css":"CaseNotoSC, serif","weight":400,"sample":"中国古代科学","role":"Chinese serif / source font"},{"family":"Long Cang","css":"CaseLongCang, cursive","weight":400,"sample":"山医命相卜","role":"Calligraphic display / Regular 400"}],
+    "application":"The catalogue, field navigation and desktop and mobile pages show this visual language in use."
+  },
+  {
+    "id":"brainybaobei","name":"BrainyBaobei","page":"brainybaobei.html","theme":"brainybaobei","heading":"A recognisable point of view.",
+    "intro":"The original mark, ink landscapes, portrait studies, warm grey paper and pink create a personal identity around the reading experience.",
+    "status":"Source-site identity · center URL unverified","source":"https://brainybaobei.com/","sourceLabel":"View the source website",
+    "basis":"Original supplied artwork and the current website's Philosopher / Mulish type system and core palette. The five-element colours in the case are semantic reading colours, not replacements for the brand palette.",
+    "notes":"A separate brand-center URL is not yet verified. Only the public fictional sample is used for reading screenshots; no personal reading is included.",
+    "logos":[{"file":"assets/new/brainybaobei/logo.png","label":"Original brand mark","bg":"#CDC6C3","compact":true}],
+    "colors":[["Pink","#FFC1CB","Brand accent"],["Warm grey","#CDC6C3","Paper ground"],["Ink","#181818","Primary text"]],
+    "type":[{"family":"Philosopher","css":"CasePhilosopher, serif","weight":400,"sample":"A little more of you.","role":"Display / Regular 400"},{"family":"Mulish","css":"CaseMulish, sans-serif","weight":400,"sample":"A conversation, not a verdict.","role":"Body and interface / Regular 400"}],
+    "application":"The portrait, ink landscape, landing page and mobile reading belong to the same brand story."
+  },
+  {
+    "id":"pulse-growth-engine","name":"Pulse Growth Engine","page":"pulse-growth-engine.html","theme":"pulse-growth-engine","heading":"The product's own identity.",
+    "intro":"The current application combines a dark workspace, a blue-to-violet accent system and Geist typography. This product identity is distinct from Pulse Branding and from Pulse Instinct.",
+    "status":"Working product identity · brand master pending","source":"new-project-sources.html#pulse-growth-engine","sourceLabel":"View product-source evidence",
+    "basis":"Current Home.tsx and index.css. The displayed Sparkles symbol preserves the existing interface component geometry; it is not presented as a commissioned custom logo master.",
+    "notes":"A dedicated Growth Engine brand center and approved custom logo package remain unverified. The product's Brand Kit feature manages other brands; it is not evidence of Growth Engine's own brand guidelines.",
+    "logos":[{"file":"assets/new/pulse-growth-engine/symbol.svg","label":"Current interface symbol / not a custom logo master","bg":"#5E6AD2","compact":true}],
+    "colors":[["Workspace","oklch(9.5% .005 280)","Background"],["Foreground","oklch(96% .004 280)","Primary text"],["Blue","#5E6AD2","Accent"],["Violet","#7C3AED","Accent"]],
+    "type":[{"family":"Geist","css":"CaseGeist, sans-serif","weight":500,"sample":"Strategy, put to work.","role":"Display / Medium 500"},{"family":"Geist","css":"CaseGeist, sans-serif","weight":400,"sample":"A source. A decision. A next step.","role":"Body and interface / Regular 400"}],
+    "application":"The current entry screens and explicitly dated workflow captures show digital applications; neither establishes an approved brand-book release or a working publishing integration."
+  },
+  {
+    "id":"pulse-instinct","name":"Pulse Instinct","page":"pulse-instinct.html","theme":"pulse-instinct","heading":"A response, with a recognisable form.",
+    "intro":"The original silhouette brings a mind, the initials P and I, and a bullseye into one mark. Its gradient, custom lettering and Poppins typography carry through the preference-testing experience.",
+    "status":"Original Design Guide + 2022 archive","source":"https://app.notion.com/p/f1077258b6f743cab7e5d884200e9632","sourceLabel":"Open the original Pulse Instinct Design Guide",
+    "basis":"Pulse Instinct 2022.pptx, especially slides 3–7, and the September 2022 Notion Design Guide. Original embedded PNG artwork is extracted without alteration. The five core colours below come from slide 7.",
+    "notes":"The Notion Brand and Logo library is at https://app.notion.com/p/21674b62a5e04443835010dfd67e5458. The current app login retains Poppins, navy and violet but includes a teal-to-violet button gradient; it is a separate current implementation. The 2022 mobile designs are archival mockups, not current app captures. Pulse Instinct / 心动挑挑 is separate from Pulse Growth Engine.",
+    "logos":[{"file":"assets/new/pulse-instinct/image10.png","label":"Original light lettering / dark application","bg":"#022556"},{"file":"assets/new/pulse-instinct/image7.png","label":"Original navy lettering / light application","bg":"#E2E5EC"},{"file":"assets/new/pulse-instinct/image5.png","label":"Original symbol / final-concept artwork","bg":"#E2E5EC","compact":true}],
+    "colors":[["Light grey","#E2E5EC","2022 palette / case ground"],["Blue grey","#D5DDEA","2022 palette / surface"],["Navy","#022556","2022 palette / text and dark application"],["Blue","#0973C3","2022 core palette"],["Violet","#8077FF","2022 core palette"]],
+    "colorRule":"The Design Guide specifies supplied gradients only, with 45-degree direction for buttons and horizontal direction allowed on scrolling pages. Original gradient artwork is preserved in the images and films; the five-colour plate is not used to invent a replacement gradient.",
+    "type":[{"family":"Poppins","css":"Poppins, sans-serif","weight":500,"sample":"Which do you prefer?","role":"Supporting identity family / Medium 500 presentation specimen"},{"family":"Poppins","css":"Poppins, sans-serif","weight":400,"sample":"Aa Bb Cc · 0123456789","role":"Supporting identity family / Regular 400 presentation specimen"}],
+    "application":"Original welcome and preference-testing mobile designs, onboarding artwork and recovered logo and promotional films show the 2022 identity in application."
+  },
+  {
+    "id":"edenne","name":"Edenne","page":"edenne.html","theme":"edenne","heading":"Warmth, held in a system.",
+    "intro":"The supplied heart/flame and custom wordmark lead a day-and-night identity. They are original design exports, never approximated with typed text.",
+    "status":"Local brand center · prototype identity","source":"http://127.0.0.1:8847/edenne-brand-center.html","sourceLabel":"Open the local Edenne brand center",
+    "basis":"Edenne logo 20260907.ai and the local brand-center exports. Day and night variants are recorded as the current prototype system, not a public product launch.",
+    "notes":"The brand center is local and will not be accessible to external portfolio viewers. Its display and body families are Trebuchet MS and Verdana; character and scene fonts remain as captured in original artwork.",
+    "logos":[{"file":"assets/new/edenne/edenne-lockup-plum.webp","label":"Day / plum lockup","bg":"#FAEDF5"},{"file":"assets/new/edenne/edenne-lockup-warmwhite.webp","label":"Night / warm-white lockup","bg":"#251323"},{"file":"assets/new/edenne/edenne-icon-fuchsia.webp","label":"Original heart/flame symbol","bg":"#FAEDF5","compact":true}],
+    "colors":[["Day ground","#FAEDF5","Day"],["Plum","#392335","Day text"],["Blossom","#FF9BD3","Day accent"],["Night ground","#251323","Night"],["Fuchsia","#D8419A","Night accent"]],
+    "type":[{"family":"Trebuchet MS","css":"'Trebuchet MS', sans-serif","weight":400,"sample":"A place for presence.","role":"Brand-center display / system font"},{"family":"Verdana","css":"Verdana, sans-serif","weight":400,"sample":"The same welcome, closer to hand.","role":"Brand-center body / system font"}],
+    "application":"The day/night boards, app icon, companion welcome and garden prototype carry the identity into its intended contexts."
+  }
+]

@@ -1,0 +1,673 @@
+[
+  {
+    "file": "assets/new/gramlingo/app-desktop.jpg",
+    "source": "https://app.gramlingo.online/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-06–07",
+    "bytes": 104701,
+    "sha256": "0973f4e5638053cc4f736965c503ee51c5a210389c25c0730245536e2b40054d"
+  },
+  {
+    "file": "assets/new/gramlingo/baloo2-latin.woff2",
+    "source": "https://gramlingo.online/fonts/baloo2-latin.woff2",
+    "kind": "original asset",
+    "bytes": 33188,
+    "sha256": "26fb4610d4bc976d2584ca15e66c11465dbc1f267a10dca668fcb3080dfe59c1"
+  },
+  {
+    "file": "assets/new/gramlingo/celebrate-gramlin.webp",
+    "source": "https://gramlingo.online/celebrate-gramlin.webp",
+    "kind": "original asset",
+    "bytes": 25552,
+    "sha256": "adc4aa42692d4789c9b317bdd7cb4f8f9d87c4905464624bbd68efff8763c42d"
+  },
+  {
+    "file": "assets/new/gramlingo/cover-advanced.webp",
+    "source": "https://gramlingo.online/cover-advanced.webp",
+    "kind": "original asset",
+    "bytes": 25112,
+    "sha256": "a8713cc3461bf417402559e177b8ad14c15ec4540786b14eb604929e3a3c3dfd"
+  },
+  {
+    "file": "assets/new/gramlingo/cover-clauses.webp",
+    "source": "https://gramlingo.online/cover-clauses.webp",
+    "kind": "original asset",
+    "bytes": 55058,
+    "sha256": "21f37eff99afb7928fa493e6c07db4350bf3beeac085249147b5d491fc92c81c"
+  },
+  {
+    "file": "assets/new/gramlingo/cover-prepositions.webp",
+    "source": "https://gramlingo.online/cover-prepositions.webp",
+    "kind": "original asset",
+    "bytes": 45378,
+    "sha256": "c0c4daf11b8052de074b4c0304856069a04824ddf7a9329d7b20efbee739b46f"
+  },
+  {
+    "file": "assets/new/gramlingo/cover-tenses.webp",
+    "source": "https://gramlingo.online/cover-tenses.webp",
+    "kind": "original asset",
+    "bytes": 34406,
+    "sha256": "c4751d05b8015e7b896190dda3bbc0fb8e62b8e64bcc7e79a308606164d147a8"
+  },
+  {
+    "file": "assets/new/gramlingo/dmsans-latin.woff2",
+    "source": "https://gramlingo.online/fonts/dmsans-latin.woff2",
+    "kind": "original asset",
+    "bytes": 62724,
+    "sha256": "ca72d2bcea8f4daa783dbdfa2d9b46068c3ce38168e05918fb867aa453b4f890"
+  },
+  {
+    "file": "assets/new/gramlingo/gramlingo-logo.webp",
+    "source": "https://gramlingo.online/gramlingo-logo.webp",
+    "kind": "original asset",
+    "bytes": 22776,
+    "sha256": "488f17f9f3321ea7955c97bb9ced5462d05e22e07b89ee6e3044f51dd76a02c7"
+  },
+  {
+    "file": "assets/new/gramlingo/mobile-plan.png",
+    "source": "https://app.gramlingo.online/ (Relative Clauses plan)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-06–07",
+    "bytes": 96760,
+    "sha256": "40d7de0568f9725a26b6e3a64f824b0694d3b2dc1710db67a243832c45c0841e",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/gramlingo/mobile-question.png",
+    "source": "https://app.gramlingo.online/ (practice question)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-06–07",
+    "bytes": 47813,
+    "sha256": "5424dd9ea71345d641c4700c0a85eba06097470bed18359cd8cd198ac7f42cd3",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/gramlingo/mobile-worlds.png",
+    "source": "https://app.gramlingo.online/ (worlds)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-06–07",
+    "bytes": 377786,
+    "sha256": "608595b3dc75324e2978960227251208c2d9b7aa1259faa84265b78dba2c234f",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/gramlingo/study-gramlin.webp",
+    "source": "https://gramlingo.online/study-gramlin.webp",
+    "kind": "original asset",
+    "bytes": 21566,
+    "sha256": "3af222a67c897425edff625846a32d73240e717ce3649a088bd7dda87c584e2a"
+  },
+  {
+    "file": "assets/new/gramlingo/think-gramlin.webp",
+    "source": "https://gramlingo.online/think-gramlin.webp",
+    "kind": "original asset",
+    "bytes": 21762,
+    "sha256": "0e6399c0bd6a683cb3c403eeaa81fb27797e46671cf0d240fdb31c84bbbfa91f"
+  },
+  {
+    "file": "assets/new/gramlingo/web-home.jpg",
+    "source": "https://gramlingo.online/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-06–07",
+    "bytes": 87687,
+    "sha256": "e9c368201de5ce0378eae2c76df014a2a603e3cb56123a87bf3e35464c069c75"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-10.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/8839bfffcbafc689-s.woff2",
+    "kind": "original asset",
+    "bytes": 72488,
+    "sha256": "6fbfe652d26c93fe35ee793d3b89268dd730eb90a120571316b32cbbc6c83cd9"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-11.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/71f0775724c344ab-s.woff2",
+    "kind": "original asset",
+    "bytes": 71284,
+    "sha256": "785a18af6e7100af2060757a9e9797bef66757899da2ad0a2a3e49737e4afe19"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-12.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/d171f072dd6fef50-s.woff2",
+    "kind": "original asset",
+    "bytes": 68948,
+    "sha256": "667f1a9177f06313e38e76a5d603df649d36ec7c0aa826a14d5cb95236f209bf"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-13.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/5758138c35e67a2e-s.woff2",
+    "kind": "original asset",
+    "bytes": 60604,
+    "sha256": "68fbf35c5e858ca6086453b9978cb257a8e0047524baba7f0460349718e482c2"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-14.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/a6b82c8cee32b5e3-s.woff2",
+    "kind": "original asset",
+    "bytes": 12192,
+    "sha256": "108a56ce019dc0eae61133d745a07663d480a6f02f28a324500a19fe4cd667f6"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-8.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/6fdcfa50c6ce8619-s.woff2",
+    "kind": "original asset",
+    "bytes": 81312,
+    "sha256": "83ad94d08db2ce8bf16c09233ccf2e6cd9f6bc9069592a74e5a14939fb5dad35"
+  },
+  {
+    "file": "assets/new/asoc/CaseLongCang-9.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/80b8f57240e45018-s.woff2",
+    "kind": "original asset",
+    "bytes": 83428,
+    "sha256": "bedc1ad554e843b6eee0b044510a9727f360ea6957f85e9cd883dfb71f9111f2"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-1.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/d2c6107607eb7d44-s.woff2",
+    "kind": "original asset",
+    "bytes": 79780,
+    "sha256": "889cb2eeb801941d1675036b3bd596c0d370faea1947d198468d6bc3f53107a3"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-2.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/3da25081fc21e3b2-s.woff2",
+    "kind": "original asset",
+    "bytes": 81160,
+    "sha256": "2da04fe98e7eb332524d395cd4f13d9a4626c037d77599c50e1ad731af907e6e"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-3.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/4f86cf50532e0e9b-s.woff2",
+    "kind": "original asset",
+    "bytes": 72516,
+    "sha256": "650a939f03de55a5cdca17ca8e4f43f54bf2687c25819102a76f62d99fee48f1"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-4.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/6dc0bae4a5666821-s.woff2",
+    "kind": "original asset",
+    "bytes": 67224,
+    "sha256": "80cbe1f2b9c2cd4db4e491003f7d09806d5b60ada1792bc17c7d4d81aa5a79a0"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-5.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/d24aebb82f01e48d-s.woff2",
+    "kind": "original asset",
+    "bytes": 66580,
+    "sha256": "90cc9eda826a15b41d93c8546e3e4c98708ecae34cd6f1317bff6bed6863d9e3"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-6.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/c36d8bb68a53eb60-s.woff2",
+    "kind": "original asset",
+    "bytes": 58128,
+    "sha256": "f86b1d47d8682617190bb64133f5548428a325ac9fb38eb34d9459cd31acfb7b"
+  },
+  {
+    "file": "assets/new/asoc/CaseNotoSC-7.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/e0d4cd45847004a4-s.woff2",
+    "kind": "original asset",
+    "bytes": 103800,
+    "sha256": "a56ca5009b41ad39553bcb89aba95e1d7ccde2e91cc07f6787af05c5dbef898b"
+  },
+  {
+    "file": "assets/new/asoc/cjk.css",
+    "source": "Selected original ASOC font-face declarations",
+    "kind": "source-derived stylesheet or SVG",
+    "bytes": 18991,
+    "sha256": "32d410e25d54d3c32e30886512e2b33d76be83e4a5b83c8d8bbe88bb0ce60db1"
+  },
+  {
+    "file": "assets/new/asoc/desktop-about.png",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/about",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 97920,
+    "sha256": "5a40da8ef57c89db080ac18b90b78a8447d995e5816ef74bd8a8e54c0d914b92",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/asoc/desktop-catalogue.png",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/ (catalogue view)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 89686,
+    "sha256": "f341a5d03730444147a819561a01f9ba035ccbc61d43195e54d7ad1ac8af25ae",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/asoc/desktop-home.png",
+    "source": "https://ancientscienceofchina.com/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 125520,
+    "sha256": "65a734812e80e7b06a355b9aab5bbb945b4bdb14bcea83d5b5063bb39b0a824d",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/asoc/libre-baskerville.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/cccb76cee38030ea-s.p.woff2",
+    "kind": "original asset",
+    "bytes": 33852,
+    "sha256": "b62b98ef69e6e55b28b9bcac84513eb1bdd1d312a344b1c76e979219923224a5"
+  },
+  {
+    "file": "assets/new/asoc/mark.svg",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/assets/asoc-mark-cinnabar.svg",
+    "kind": "original asset",
+    "bytes": 10315,
+    "sha256": "38c4e2dcf14b6ea46c230f12325a60de9250acf1cfbf3c72922533632080bd4f"
+  },
+  {
+    "file": "assets/new/asoc/mobile-about.png",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/about",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 54763,
+    "sha256": "a5bf944fd270061db7960b71cbadf9f5146968d7a10312cb4900c12fbf212bb0",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/asoc/mobile-catalogue.png",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/ (catalogue view)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 27686,
+    "sha256": "c1c996042352a7daa862533ed3cfeacdbeda77347d572bc4bca9392c10722895",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/asoc/mobile-home.png",
+    "source": "https://ancientscienceofchina.com/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 68073,
+    "sha256": "5267a9cf5bbf3602153e63dcc4ab6ccd6c5951ae8f7d84fba631252b41246229",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/asoc/web-home.jpg",
+    "source": "https://ancientscienceofchina.com/ (initial observation; unused)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 33525,
+    "sha256": "e70d9b0f93b385b412bb053efe64375173e0c764ec71af8713b9cb076bcc45e5"
+  },
+  {
+    "file": "assets/new/asoc/work-sans.woff2",
+    "source": "https://ancient-science-of-china-n9pv.onrender.com/_next/static/media/c9e6921c7fc300d8-s.p.woff2",
+    "kind": "original asset",
+    "bytes": 50524,
+    "sha256": "72cd8f67849cc714f3364eeeb378df9a49f4aff00e6a3640fad36c9c93a9b197"
+  },
+  {
+    "file": "assets/new/brainybaobei/birds.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df0ea21a80a4e0e43cd_大雁.png",
+    "kind": "original asset",
+    "bytes": 212266,
+    "sha256": "893a82743ce162523483710abdf696efa6dad6eac6fff90b077a783d57d6d65e",
+    "imageWidth": 11084,
+    "imageHeight": 9076
+  },
+  {
+    "file": "assets/new/brainybaobei/desktop-chart.png",
+    "source": "https://brainybaobei.com/report?sample=1 (illustrated chart)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 766502,
+    "sha256": "0df49e544dbc5750d5f9f4916cbe9b15e2a77f867bd5098dbf450cfe1e9b4f65",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/brainybaobei/desktop-home.png",
+    "source": "https://brainybaobei.com/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 1094006,
+    "sha256": "4fd0c5508b7ac135093654d6c3d8dd8f558823817239948b092f8d7e650c040f",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/brainybaobei/eyes-closed-display.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df05e73bf3f5e293d66_lareesa eyes closed-p-1600.png",
+    "kind": "original asset",
+    "bytes": 49219,
+    "sha256": "fe13a022a3740ff00ad50f8b1fb6b853a38f19d468e86ea5b3b9f439264ba098",
+    "imageWidth": 1600,
+    "imageHeight": 1310
+  },
+  {
+    "file": "assets/new/brainybaobei/eyes-closed.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df05e73bf3f5e293d66_lareesa eyes closed.png",
+    "kind": "original asset",
+    "bytes": 1096725,
+    "sha256": "bf8100a938ed3e3bf617aa5e2f48bb4970ad1d7b1e8a55ee6c501facd75df5db",
+    "imageWidth": 11084,
+    "imageHeight": 9076
+  },
+  {
+    "file": "assets/new/brainybaobei/eyes-open-display.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df1f3ea705f45ec1e57_lareesa eyes open-p-1600.png",
+    "kind": "original asset",
+    "bytes": 51547,
+    "sha256": "deb06ca5c80502d8a222b76c95b8e50c916df6e15e830486b030c6921f2f4ed9",
+    "imageWidth": 1600,
+    "imageHeight": 1310
+  },
+  {
+    "file": "assets/new/brainybaobei/eyes-open.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df1f3ea705f45ec1e57_lareesa eyes open.png",
+    "kind": "original asset",
+    "bytes": 1234614,
+    "sha256": "1933a9ec18cb84e9cf21b6d2fe39f3f0cf95d197c0b233bfe05a690252e83f25",
+    "imageWidth": 11084,
+    "imageHeight": 9076
+  },
+  {
+    "file": "assets/new/brainybaobei/logo.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/680325c33eef1e0565bb72f3_Artboard 1_1.png",
+    "kind": "original asset",
+    "bytes": 14004,
+    "sha256": "13fea52c3b371bf15a331da540a1d9ee9e35c93518cfc0cbe5275a0e3ec33bd3",
+    "imageWidth": 256,
+    "imageHeight": 256
+  },
+  {
+    "file": "assets/new/brainybaobei/mobile-chart.png",
+    "source": "https://brainybaobei.com/report?sample=1 (Bing day-stem explanation)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 342313,
+    "sha256": "ccbda8c1df6319d60757b47cca3d419c46520d8fea53abefd2efd8ed0fd24249",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/brainybaobei/mobile-home.png",
+    "source": "https://brainybaobei.com/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 379163,
+    "sha256": "1f44f8caa94c4e43188c3d8ea645080ff668150213ea604a126737bf8dea15bf",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/brainybaobei/mobile-reading.png",
+    "source": "https://brainybaobei.com/report?sample=1",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 254969,
+    "sha256": "456ab158aacf23dce5b93af73408df9e05f893fd6eedcdcab6961c0c73f1b8b4",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/brainybaobei/mountains-display.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df28c5bfdeb49179867_山水-p-1600.png",
+    "kind": "original asset",
+    "bytes": 217536,
+    "sha256": "af7d61d23c110882705e5c5a1b01241e03f64be2d92b8db4c2be2ba59d52fa5e",
+    "imageWidth": 1600,
+    "imageHeight": 1310
+  },
+  {
+    "file": "assets/new/brainybaobei/mountains-tall.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df14f76937e3a9ebdf6_高山.png",
+    "kind": "original asset",
+    "bytes": 1133608,
+    "sha256": "cfb0427e1ad6454ec1b6e724247fd22f17658afde4c412cfe28c1007e37b1e3c",
+    "imageWidth": 11084,
+    "imageHeight": 9076
+  },
+  {
+    "file": "assets/new/brainybaobei/mountains.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/68332df28c5bfdeb49179867_山水.png",
+    "kind": "original asset",
+    "bytes": 2608190,
+    "sha256": "d5063b302be895c251545645bd7db93050c3d6f25d8f57514b13c288d8534aae",
+    "imageWidth": 11084,
+    "imageHeight": 9076
+  },
+  {
+    "file": "assets/new/brainybaobei/mulish-400.woff2",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/fonts/mulish-400.woff2",
+    "kind": "original asset",
+    "bytes": 29968,
+    "sha256": "8d1d33d6beea5a722b8f336d79c61c07405949457e37b5e65454c72dc10aba1a"
+  },
+  {
+    "file": "assets/new/brainybaobei/mulish-600.woff2",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/fonts/mulish-600.woff2",
+    "kind": "original asset",
+    "bytes": 29968,
+    "sha256": "8d1d33d6beea5a722b8f336d79c61c07405949457e37b5e65454c72dc10aba1a"
+  },
+  {
+    "file": "assets/new/brainybaobei/paper.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/67f68c80ec0cf749d5435526/684698738a4f69d63dd2ba9f_imgonline-com-ua-TextureSeamless-a5rjzqw7tDia7y.png",
+    "kind": "original asset",
+    "bytes": 17083,
+    "sha256": "643a15f93e6c997e0b691e5b05d0fc1d0a9e760fe6463aba717755f9f5e32e5f",
+    "imageWidth": 100,
+    "imageHeight": 75
+  },
+  {
+    "file": "assets/new/brainybaobei/philosopher-400.woff2",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/fonts/philosopher-400.woff2",
+    "kind": "original asset",
+    "bytes": 22052,
+    "sha256": "aa134eeaa3e21f618aadf4347ca88893f72aef19cd9ecde6cfe449f3d0b5fa25"
+  },
+  {
+    "file": "assets/new/brainybaobei/philosopher-700.woff2",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/hey/work/brainybaobei/assets/fonts/philosopher-700.woff2",
+    "kind": "original asset",
+    "bytes": 22264,
+    "sha256": "1f486411fd520f64e57e73e3f8f66a617c27df97992bd3c51a411c74db0f765d"
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/archive-brand-kit.png",
+    "source": "E:/OneDrive/Documents/New project/pulse-growth-engine/docs/program/evidence/bundle2/human-ui-real-fixed/13-brand-kit.png",
+    "kind": "original asset",
+    "bytes": 127314,
+    "sha256": "ca8793f4dbbfd4ff708033a7df1e16abdf8447d086ff45f7478dec53547a1e49",
+    "imageWidth": 1440,
+    "imageHeight": 1000
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/archive-crawl.png",
+    "source": "E:/OneDrive/Documents/New project/pulse-growth-engine/docs/program/evidence/bundle2/human-ui-real-fixed/05-crawl-report.png",
+    "kind": "original asset",
+    "bytes": 99231,
+    "sha256": "21e1e91a0df8255a8910392a0f7d333ab4605c9063b17319aa3ec7dcaadb0bdf",
+    "imageWidth": 1440,
+    "imageHeight": 1000
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/archive-review.png",
+    "source": "E:/OneDrive/Documents/New project/pulse-growth-engine/docs/program/evidence/bundle2/human-ui-real-fixed/16-board-review.png",
+    "kind": "original asset",
+    "bytes": 96988,
+    "sha256": "a21d4e89ae6b9fc6cacf44551626379fbcea88b9d1d24999d34eb4a9b141e527",
+    "imageWidth": 1440,
+    "imageHeight": 1000
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/desktop-entry.png",
+    "source": "http://127.0.0.1:39731/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 196003,
+    "sha256": "4134a609ca0fdb900e1a72a4102759653984375cab1d246601349a1224817beb",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/geist-300.ttf",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RwuM4nQ.ttf",
+    "kind": "original asset",
+    "bytes": 72916,
+    "sha256": "dfd8bfa490bf2100bf3ef27aabffdf341d2d2c6f3d91af120eb525542756e842"
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/geist-400.ttf",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RnOM4nQ.ttf",
+    "kind": "original asset",
+    "bytes": 72916,
+    "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/geist-500.ttf",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4nQ.ttf",
+    "kind": "original asset",
+    "bytes": 72996,
+    "sha256": "a8eefb873ba9c9020665f8a98302697ce1f3b79ab2deef6ee508c0ca6a82e876"
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/geist-600.ttf",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RQuQ4nQ.ttf",
+    "kind": "original asset",
+    "bytes": 73048,
+    "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/geist-700.ttf",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_Re-Q4nQ.ttf",
+    "kind": "original asset",
+    "bytes": 72984,
+    "sha256": "1a9874b3be0fc168692a3d2327bccb4d28835653d3b91537a755296a467a83e3"
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/mobile-entry.png",
+    "source": "http://127.0.0.1:39731/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 110318,
+    "sha256": "b826b06dd0e82f78def9c67144b6ceee6385bc8b3ccf01c7b14fdabb00bae103",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/pulse-growth-engine/symbol.svg",
+    "source": "Exact Sparkles SVG component from the local application DOM",
+    "kind": "source-derived stylesheet or SVG",
+    "bytes": 640,
+    "sha256": "62abf4c13da9c99e651b3236b039eb19fabe8065c28cc0156fe751331e219e55"
+  },
+  {
+    "file": "assets/new/edenne/desktop-brand-center.png",
+    "source": "http://127.0.0.1:8847/edenne-brand-center.html (Day)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 484611,
+    "sha256": "accb58dc32e008031048e14e463edcebc827382fbc5e73b35986a210c74febef",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/edenne/desktop-brand-night.png",
+    "source": "http://127.0.0.1:8847/edenne-brand-center.html (Night)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 482223,
+    "sha256": "139e4b09592bd75f009e0bd839f5bea154f0c5bc389c891548d43a17af7f5df2",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/edenne/desktop-companions.png",
+    "source": "http://127.0.0.1:8847/experience.html#welcome",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 1488373,
+    "sha256": "e65d6a65594810ab72ef44ed71cec78ae56d264dad07665b64fe957a7512616c",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/edenne/desktop-garden.png",
+    "source": "http://127.0.0.1:8847/",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 1576454,
+    "sha256": "5af13422f46932ab1f37bab94ac3176c08a6e0146ad83419b4f51acf17e9c5f3",
+    "imageWidth": 1440,
+    "imageHeight": 960
+  },
+  {
+    "file": "assets/new/edenne/edenne-app-icon-512.png",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/di/outputs/eden-pavilion/brand-center-assets/edenne-app-icon-512.png",
+    "kind": "original asset",
+    "bytes": 17070,
+    "sha256": "bce1d5d5a97127b7b479bf12b570ba8ed13580b3f0af2f3e4ff90510856e6a83",
+    "imageWidth": 512,
+    "imageHeight": 512
+  },
+  {
+    "file": "assets/new/edenne/edenne-icon-blossom.webp",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/di/outputs/eden-pavilion/brand-center-assets/edenne-icon-blossom.webp",
+    "kind": "original asset",
+    "bytes": 4636,
+    "sha256": "e746f2e59550d60b934d38d0c4023d16329505b963706d0dd340f6946e32551a"
+  },
+  {
+    "file": "assets/new/edenne/edenne-icon-fuchsia.webp",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/di/outputs/eden-pavilion/brand-center-assets/edenne-icon-fuchsia.webp",
+    "kind": "original asset",
+    "bytes": 4920,
+    "sha256": "2933cbd10b6636659e7a9b0fd3eb80d9108adacb8529a5c066768651c4781b72"
+  },
+  {
+    "file": "assets/new/edenne/edenne-icon-plum.webp",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/di/outputs/eden-pavilion/brand-center-assets/edenne-icon-plum.webp",
+    "kind": "original asset",
+    "bytes": 3758,
+    "sha256": "7f4c708a73a930bd155f2fdfb1e6a70556056274504160226d4bba95c635817d"
+  },
+  {
+    "file": "assets/new/edenne/edenne-lockup-plum.webp",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/di/outputs/eden-pavilion/brand-center-assets/edenne-lockup-plum.webp",
+    "kind": "original asset",
+    "bytes": 13806,
+    "sha256": "ab43e62de5d74e2eb754106d056a51ea34ceee9d5185ea3669bd62b46acc077d"
+  },
+  {
+    "file": "assets/new/edenne/edenne-lockup-warmwhite.webp",
+    "source": "C:/Users/hunin/Documents/Codex/2026-09-05/di/outputs/eden-pavilion/brand-center-assets/edenne-lockup-warmwhite.webp",
+    "kind": "original asset",
+    "bytes": 12744,
+    "sha256": "9b7d6e297e394a551a589c05c4f2cb1aebe29fef1cdfcb42382c7a0f162e83f4"
+  },
+  {
+    "file": "assets/new/edenne/mobile-brand-center.png",
+    "source": "http://127.0.0.1:8847/edenne-brand-center.html (Day)",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 58503,
+    "sha256": "354fafa2a2484ffe86ad38d9082288bafd431c459287557a2fb7bacff1ec1805",
+    "imageWidth": 390,
+    "imageHeight": 844
+  },
+  {
+    "file": "assets/new/edenne/mobile-companions.png",
+    "source": "http://127.0.0.1:8847/experience.html#welcome",
+    "kind": "browser capture",
+    "captureDate": "2026-09-07",
+    "bytes": 373310,
+    "sha256": "3667a674155e3105801661b98f07e0fbdb30ae8caa1674fd6b387f83c699f5e6",
+    "imageWidth": 390,
+    "imageHeight": 844
+  }
+]
