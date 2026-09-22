@@ -1,0 +1,16 @@
+const p=PROJECTS.find(p=>p.id===new URLSearchParams(location.search).get('project'));
+const tell=type=>parent.postMessage({type},location.origin);
+if(p.scene.kind==='spline'){
+ document.body.style.background=p.ink;const v=document.createElement('spline-viewer');v.setAttribute('url',p.scene.url);v.setAttribute('events-target','local');document.body.append(v);
+ v.addEventListener('load-complete',()=>{const style=document.createElement('style');style.textContent='#logo{display:none!important}';v.shadowRoot?.append(style);v.shadowRoot?.querySelector('#logo')?.remove();tell('scene-ready')});v.addEventListener('context-loss',()=>tell('scene-error'));await import('https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js').catch(()=>tell('scene-error'));
+}else{
+ try{
+  const THREE=await import('three'),{OBJLoader}=await import('./vendor/OBJLoader.js'),{OrbitControls}=await import('./vendor/OrbitControls.js');
+  const scene=new THREE.Scene();scene.background=new THREE.Color(p.ink);const camera=new THREE.PerspectiveCamera(34,innerWidth/innerHeight,.01,2000),renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setSize(innerWidth,innerHeight);document.body.append(renderer.domElement);
+  const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=false;controls.enablePan=false;const render=()=>renderer.render(scene,camera);controls.addEventListener('change',render);
+  scene.add(new THREE.HemisphereLight(0xffffff,0x144168,2));const key=new THREE.DirectionalLight(0xffffff,3);key.position.set(5,7,8);scene.add(key);const fill=new THREE.DirectionalLight(0x59a7be,2);fill.position.set(-5,0,-3);scene.add(fill);
+  let model=await new OBJLoader().loadAsync('./assets/dna-ring.obj');const box=new THREE.Box3().setFromObject(model),size=box.getSize(new THREE.Vector3()),center=box.getCenter(new THREE.Vector3());model.position.sub(center);model.traverse(o=>{if(o.isMesh)o.material=new THREE.MeshStandardMaterial({color:0x59a7be,metalness:.22,roughness:.38})});scene.add(model);const extent=Math.max(size.x,size.y,size.z),distance=extent*1.85*Math.max(1,1/camera.aspect);camera.position.set(0,distance*.55,distance);camera.lookAt(0,0,0);controls.target.set(0,0,0);controls.minDistance=extent*.7;controls.maxDistance=extent*10;controls.update();render();tell('scene-ready');
+  for(const [id,label] of [['left','Turn left'],['right','Turn right'],['reset','Reset view']]){let b=document.createElement('button');b.id=id;b.textContent=label;b.onclick=()=>{if(id==='reset'){model.rotation.set(0,0,0);camera.position.set(0,distance*.55,distance);controls.target.set(0,0,0);controls.update()}else model.rotation.y+=(id==='left'?-1:1)*Math.PI/8;render()};document.body.append(b)}
+  addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);render()});renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();tell('scene-error')});addEventListener('pagehide',()=>{controls.dispose();model.traverse(o=>{o.geometry?.dispose();o.material?.dispose()});renderer.dispose()});
+ }catch(e){tell('scene-error');document.body.textContent='The original model could not load.';}
+}

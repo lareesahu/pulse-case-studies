@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1432 404">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .02em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        opacity: .5;
+      }
+
+      .cls-2 {
+        letter-spacing: .03em;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+
+      .cls-5 {
+        letter-spacing: .03em;
+      }
+
+      .cls-6 {
+        fill: #000;
+        font-family: Spartan-SemiBold, Spartan;
+        font-size: 200px;
+        font-weight: 600;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+
+      .cls-4 {
+        letter-spacing: .03em;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(33.58 290.07)"><tspan class="cls-5" x="0" y="0">ne</tspan><tspan class="cls-7" x="276.5" y="0">o</tspan><tspan class="cls-5" x="420.5" y="0">lab.</tspan><tspan class="cls-1" x="873.99" y="0">c</tspan><tspan class="cls-2" x="987.39" y="0">a</tspan><tspan class="cls-3" x="1137.29" y="0">r</tspan><tspan class="cls-4" x="1237.69" y="0">e</tspan></text>
+</svg>

@@ -1,0 +1,57 @@
+{
+  "observed_at": "2026-09-09T07:10:20.797Z",
+  "scope": "Local collection covers and the rejected Edenne/Growth Engine screen selections",
+  "scene": {
+    "name": "Minimal MacBook mockup on stone / front-facing view 3",
+    "creator": "Mockups Design",
+    "source": "https://mockups-design.com/minimal-macbook-mockup-on-stone/",
+    "license": "https://mockups-design.com/license/",
+    "implementation": "Flattened studio composition with original Robotist screen, then each project screen fitted over the same aperture. No editable PSD distributed.",
+    "note": "The complete PSD download failed; this local composition uses the published flattened scene preview. Obtain the full-resolution licensed package before any public export."
+  },
+  "alternative": {
+    "name": "Concrete and metals MacBook 16 Pro",
+    "creator": "River Visual",
+    "source": "https://www.mockupcloud.com/free/concrete-and-metals-macbook-16-pro-free-mockup",
+    "status": "Reference only; free download requires account. Not used in collection."
+  },
+  "screens": {
+    "web": "Actual original homepage captures / locally prepared source HTML scroll",
+    "growth_engine": "Authenticated dashboard and Content Packages captured from pulse-growth-engine.onrender.com; no app actions were submitted",
+    "edenne": "Live Sienna garden and tour, recorded again at 1440x936; current live content observed, URL release query does not pin an immutable deployment"
+  },
+  "motion": {
+    "cycle_ms": 26000,
+    "screen_only": true,
+    "devices_move": false,
+    "reduced_motion": "Static poster by default; explicit Play previews available",
+    "offscreen": "Pause",
+    "edenne_video": "assets/captures/edenne-tour.mp4"
+  },
+  "limits": [
+    "Human confirmation that the current live Sienna release is the exact Edenne version intended remains pending.",
+    "Instinct retains its original 2022 identity composition, and Vodkiss its original packaging shot."
+  ],
+  "round2_palette_scenes": {
+    "superseded": "2026-09-09 user rejection: alternate scenes misaligned/not better. Reverted to the original stone plate on all covers.",
+    "round3_final": {
+      "method": "Original Mockups Design stone plate on every digital cover; per-project brand-color mood layer over the scene (mix-blend color for dark brands, screen for light brands); real product screens overlaid above the mood layer and never tinted.",
+      "moods": [
+        "robotist navy #0C1828 (color .9)",
+        "neolabcare charcoal #1A1A1A (color .85)",
+        "wekwikgene light ground #F5F6F8 (screen .88)",
+        "gramlingo cream #FFF5EE (screen .88)",
+        "asoc paper #F4EEE1 (screen .9)",
+        "brainybaobei warm grey #CDC6C3 (screen .85)",
+        "growth ink #12121E (color .85)",
+        "edenne day pink #FAEDF5 (screen .85)"
+      ],
+      "darkened_materials": "robotist/neolabcare/growth brightness(.52) contrast(1.1); remaining covers grayscale only",
+      "evidence": [
+        ".ui-evidence/r3-top2.png",
+        ".ui-evidence/r3-growth2.png",
+        ".ui-evidence/r3-gramlingo.png"
+      ]
+    }
+  }
+}
