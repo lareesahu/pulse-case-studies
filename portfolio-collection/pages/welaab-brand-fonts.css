@@ -1,0 +1,5 @@
+/* Welaab brand center — project faces, self-hosted (no external CDN). */
+@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url('../../recent-case-studies/assets/new/welaab/dm-serif-display-400.woff2') format('woff2');}
+@font-face{font-family:'Syne';font-style:normal;font-weight:400 800;font-display:swap;src:url('../../recent-case-studies/assets/new/welaab/syne-400-800.woff2') format('woff2');}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../../recent-case-studies/assets/new/welaab/dm-mono-400.woff2') format('woff2');}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:500;font-display:swap;src:url('../../recent-case-studies/assets/new/welaab/dm-mono-500.woff2') format('woff2');}

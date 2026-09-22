@@ -51,8 +51,13 @@ document.querySelector('#specimen-input').oninput=e=>document.querySelector('#ty
 function sizeFrame(f){const wrap=f.parentElement,w=+f.dataset.width;if(!wrap.clientWidth)return;f.style.width=w+'px';f.style.height=(wrap.clientHeight/(wrap.clientWidth/w))+'px';f.style.transform=`scale(${wrap.clientWidth/w})`;}
 window.sizeFrames=()=>document.querySelectorAll('iframe[data-page]').forEach(sizeFrame);
 function source(f){return `screen.html?project=${P.id}&page=${f.dataset.page}&kind=${f.dataset.kind}`}
-const frameObserver=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const f=e.target;if(!f.src){f.src=source(f);f.onload=()=>sizeFrame(f)}sizeFrame(f)}}),{rootMargin:'400px'});
-document.querySelectorAll('iframe[data-page]').forEach(f=>frameObserver.observe(f));new ResizeObserver(()=>window.sizeFrames()).observe(document.querySelector('#case'));
+const frameObserver=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const f=e.target;if(!f.src){f.src=source(f);f.onload=()=>sizeFrame(f)}sizeFrame(f);/* the wrapper can still be mid-layout on first sight: measure again after paint */requestAnimationFrame(()=>requestAnimationFrame(()=>sizeFrame(f)))}}),{rootMargin:'400px'});
+document.querySelectorAll('iframe[data-page]').forEach(f=>frameObserver.observe(f));new ResizeObserver(()=>window.sizeFrames()).observe(document.querySelector('#case'));/* A device frame sized before its section had settled keeps a stale iframe and shows
+   a strip of the exhibit's own background under the screen. Re-measure each frame
+   whenever its wrapper changes size. */
+const frameResize=new ResizeObserver(es=>es.forEach(e=>{const f=e.target.querySelector('iframe[data-page]');if(f)sizeFrame(f)}));document.querySelectorAll('.screen-content').forEach(w=>frameResize.observe(w));
+addEventListener('load',()=>window.sizeFrames());
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>window.sizeFrames());
 function changeFrame(f,page){f.dataset.page=page;delete f.dataset.ready;f.src=source(f);f.onload=()=>sizeFrame(f);window.restartPlayback?.(f.closest('section').id)}
 document.querySelectorAll('[data-flow]').forEach((b,i)=>b.onclick=()=>{document.querySelectorAll('[data-flow]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));changeFrame(document.querySelector('.ux iframe'),b.dataset.flow);document.querySelector('#flow-note').textContent='0'+(i+1)+' / '+pages.find(p=>p.id===b.dataset.flow).label});
 document.querySelectorAll('button[data-focus]').forEach(b=>b.onclick=()=>{document.querySelector('.paired-laptops').dataset.focus=b.dataset.focus;document.querySelectorAll('button[data-focus]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));setTimeout(window.sizeFrames,50)});
