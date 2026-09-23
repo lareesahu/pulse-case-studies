@@ -10,7 +10,7 @@
   if(nativePages.has(s.id)){
    s.frame=document.createElement('iframe');s.frame.title=s.id+' original website preview';s.frame.tabIndex=-1;s.frame.setAttribute('aria-hidden','true');s.frame.setAttribute('sandbox','allow-scripts allow-same-origin');s.frame.src=s.id==='neolabcare'?'../neolabcare-case-study/pages/index.html':`pages/${s.id}-home.html`;s.frame.style.opacity=0;s.el.append(s.frame);fit(s);
   }else if(s.id==='edenne'){
-   s.video=document.createElement('video');s.video.muted=true;s.video.playsInline=true;s.video.loop=true;s.video.preload='metadata';s.video.poster=s.el.querySelector('img').src;s.video.src='assets/captures/edenne-tour.mp4';s.el.append(s.video);s.el.querySelector('.studio-poster').style.display='none';s.video.addEventListener('loadeddata',()=>{s.ready=true;if(!paused&&s.visible)s.video.play().catch(()=>{})});
+   s.video=document.createElement('video');s.video.muted=true;s.video.playsInline=true;s.video.loop=true;s.video.preload='metadata';s.video.poster=s.el.querySelector('img').src;s.video.src='assets/clips/edenne.mp4';s.el.append(s.video);s.el.querySelector('.studio-poster').style.display='none';s.video.addEventListener('loadeddata',()=>{s.ready=true;if(!paused&&s.visible)s.video.play().catch(()=>{})});
   }else if(s.id==='pulse-growth-engine'){
    s.slide=document.createElement('img');s.slide.src='assets/captures/growth-content.png';s.slide.alt='Growth Engine content packages';s.slide.className='studio-slide';s.el.append(s.slide);s.ready=true;
   }else s.ready=true;
